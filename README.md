@@ -51,7 +51,12 @@ This project was created using `2021.3.0f1`. When you open this project in Unity
 6. Commit and push.
 7. If you are having issues with .meta files check and modify your gitignore or make sure there are no empty folders. 
 
+<<<<<<< HEAD
 
 
+Who playin outside tomorroe
 
-Who playin outside tomorroe=======
+I'm playin outside tomorroe
+=======
+I am adding and changing 
+>>>>>>> 91b33b192526dcc2eb5cd20bb3ed834aa3bad515
