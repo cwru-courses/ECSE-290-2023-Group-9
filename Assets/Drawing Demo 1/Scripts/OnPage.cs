@@ -23,7 +23,7 @@ public class OnPage : MonoBehaviour
             {
                 validDraw = true;
                 // raycast hit this gameobject
-                Debug.Log("Valid Drawing Area");
+                //Debug.Log("Valid Drawing Area");
             }
             else
             {
