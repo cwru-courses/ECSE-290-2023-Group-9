@@ -63,7 +63,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6425746149184610843}
-  - component: {fileID: 6425746149184610842}
+  - component: {fileID: 2240998842841603959}
   - component: {fileID: 6425746149184610840}
   m_Layer: 0
   m_Name: Line
@@ -88,7 +88,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!120 &6425746149184610842
+--- !u!120 &2240998842841603959
 LineRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,8 +137,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 0.13888931
+        time: 0.026031494
+        value: 0.13432884
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -197,5 +197,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62944296f7f339e48a9262a038e96cba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _renderer: {fileID: 6425746149184610842}
+  _renderer: {fileID: 2240998842841603959}
   _collider: {fileID: 6425746147833675630}

@@ -19,15 +19,17 @@ public class OnPage : MonoBehaviour
 
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity);
-            if (hit.collider != null && hit.collider.transform == this.transform)
+            if (hit.collider != null) //&& hit.collider.transform.name == "RightPage")
             {
+
                 validDraw = true;
                 // raycast hit this gameobject
-                Debug.Log("Valid Drawing Area");
+                //Debug.Log("Valid Drawing Area"+validDraw);
             }
             else
             {
                 validDraw = false;
+                //Debug.Log("Invalid Drawing Area"+validDraw);
             }
 
             // if (Physics.Raycast(ray, out hit))

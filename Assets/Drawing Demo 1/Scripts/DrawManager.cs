@@ -12,9 +12,12 @@ public class DrawManager : MonoBehaviour
 
     private Line _currentLine;
 
+    private List<Line> _lines;
+
     void Start()
     {
         _cam = Camera.main;
+        _lines = new List<Line>();
     }
 
     // Update is called once per frame
@@ -24,9 +27,32 @@ public class DrawManager : MonoBehaviour
 
         if (OnPage.validDraw)
         {
-            if (Input.GetMouseButtonDown(0)) { _currentLine = Instantiate(_linePrefab, mousePos, Quaternion.identity); }
+            //Debug.Log("validDraw");
+            if (Input.GetMouseButtonDown(0)) { 
+                _currentLine = Instantiate(_linePrefab, mousePos, Quaternion.identity); 
+                _lines.Add(_currentLine);
+            }
 
             if (Input.GetMouseButton(0)) { _currentLine.SetPosition(mousePos); }
         }
+    }
+
+    public void Delete()
+    {
+        Debug.Log("Delete Clicked!");
+        StartCoroutine(Deleting());
+        _lines.Clear();
+    }
+
+    IEnumerator Deleting()
+    {
+    
+        Debug.Log(_lines.Count);
+        for (int i = 0; i < _lines.Count; i++)
+        {
+            Debug.Log(_lines[i]);
+            Object.Destroy(_lines[i].gameObject);
+        }
+        yield return null;
     }
 }

@@ -39,4 +39,11 @@ public class Line : MonoBehaviour
 
         return Vector2.Distance(_renderer.GetPosition(_renderer.positionCount - 1), pos) > DrawManager.RESOLUTION;
     }
+
+    //public void Delete()
+    //{
+        //Debug.Log("Delete Clicked!" + GameObject.FindGameObjectWithTag("Line(Clone)"));
+        //Destroy(GameObject.FindGameObjectWithTag("Line(Clone)"));
+
+    //}
 }
