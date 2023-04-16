@@ -44,7 +44,7 @@ public class Dialogue : MonoBehaviour
         foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
-            yield return new WaitForSeconds(textSpeed/5);
+            yield return new WaitForSeconds(textSpeed/3);
         }
     }
 
