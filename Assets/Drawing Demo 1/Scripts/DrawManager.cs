@@ -7,6 +7,7 @@ public class DrawManager : MonoBehaviour
     private Camera _cam;
     [SerializeField] private Line _linePrefab;
 
+    public static bool resetLines = false;
 
     public const float RESOLUTION = 0.1f;
 
@@ -41,6 +42,7 @@ public class DrawManager : MonoBehaviour
     {
         Debug.Log("Delete Clicked!");
         StartCoroutine(Deleting());
+     //   StartCoroutine(resetLine());
         _lines.Clear();
     }
 
@@ -55,4 +57,16 @@ public class DrawManager : MonoBehaviour
         }
         yield return null;
     }
+
+    /*
+    IEnumerator resetLine()
+    {
+        resetLines = true;
+        new WaitForSeconds(.1f);
+        resetLines = false;
+        yield return null;
+
+
+    }
+    */
 }

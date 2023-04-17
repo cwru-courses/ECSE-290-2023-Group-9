@@ -5,16 +5,24 @@ using UnityEngine;
 public class CountingHits : MonoBehaviour
 {
     public static int numHit;
+    public static int numHitCon1;
+    public static int numHitCon2;
+    public static int numHitCon3;
+    public static int badHit1;
+    public static int badHit3;
+    public static int badHit2;
+
 
     //TODELETE eventually...
     //you win pop up for game demo
 
     [SerializeField] private GameObject youWinTexts;
     RectTransform youWinText;
-
+    public BoxCollider2D[] reactivateTime;
     // Start is called before the first frame update
     void Start()
     {
+        reactivateTime = GetComponentsInChildren<BoxCollider2D>();
         numHit = 0;
 
         //TODELETE eventually...
@@ -24,22 +32,28 @@ public class CountingHits : MonoBehaviour
         youWinText = youWinTexts.GetComponent<RectTransform>();
     }
 
+
+    /*
     // Update is called once per frame
     void Update()
     {
-        if (numHit == 6)
+        if (numHitCon1 == 23)
         {
             StartCoroutine(GotThemAll());
-            StartCoroutine(Win());
+            //StartCoroutine(Win());
         }
+
+      
     }
+    
 
     IEnumerator GotThemAll()
     {
         Debug.Log("You Did It :)");
-        numHit = 0;
+        numHitCon1 = 0;
         yield return null;
     }
+    */
 
     IEnumerator GotHit()
     {
@@ -54,6 +68,21 @@ public class CountingHits : MonoBehaviour
         youWinTexts.SetActive(true);
         yield return new WaitForSeconds(2f);
         youWinTexts.SetActive(false);
+    }
+
+     public void EnableChildComponents()
+    {
+        foreach (BoxCollider2D col in reactivateTime)
+        {
+            col.enabled = true;
+        }
+        numHitCon1 = 0;
+        numHitCon2 = 0;
+        numHitCon3 = 0;
+        badHit1 = 0;
+        badHit2 = 0;
+        badHit3 = 0;
+      
     }
 
 }
