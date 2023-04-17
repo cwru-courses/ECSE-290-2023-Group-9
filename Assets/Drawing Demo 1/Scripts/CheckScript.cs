@@ -35,7 +35,7 @@ public class CheckScript : MonoBehaviour
 
     public void CheckDrawing2()
     {
-        Debug.Log(CountingHits.numHitCon2);
+       // Debug.Log(CountingHits.numHitCon2);
         if (CountingHits.numHitCon2 == 0 && CountingHits.badHit2 == 0)
         {
 
@@ -63,7 +63,7 @@ public class CheckScript : MonoBehaviour
 
     public void CheckDrawing3()
     {
-        Debug.Log(CountingHits.numHitCon3);
+        //Debug.Log(CountingHits.numHitCon3);
 
         if (CountingHits.numHitCon3 == 0 && CountingHits.badHit3 == 0)
         {
