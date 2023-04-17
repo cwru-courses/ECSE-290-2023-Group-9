@@ -43,9 +43,10 @@ public class CorrectDraw : MonoBehaviour
 
 IEnumerator GotHit()
 {
+    Destroy(gameObject);
     CountingHits.numHit += 1;
     // Debug.Log(numHit);
-    Destroy(gameObject);
+    //Destroy(gameObject);
     yield return null;
     //yield return new WaitForSeconds(.1f);
 }

@@ -31,7 +31,6 @@ public class SceneController : MonoBehaviour
 
         } else if (state == GameState.Puzzle)
         {
-
         }
     }
 }
