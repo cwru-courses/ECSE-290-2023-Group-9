@@ -13,12 +13,22 @@ public class Dialogue : MonoBehaviour
     private bool isIntro;
 
     private int index;
+
+    //Audio Playing On Every Character
+
+    [Header("Audio")]
+
+    [SerializeField] private AudioClip dialogueTypingSoundClip;
+
+    private AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
         isIntro = true;
         textComponent.text = string.Empty;
         StartDialogue();
+
+        audioSource = this.gameObject.AddComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -53,6 +63,7 @@ public class Dialogue : MonoBehaviour
         {
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed/3);
+            audioSource.PlayOneShot(dialogueTypingSoundClip);
         }
     }
 
@@ -67,7 +78,7 @@ public class Dialogue : MonoBehaviour
         {
             gameObject.SetActive(false);
             isIntro = false;
-            DoorZero.SetClick();
+            DoorZero.SetClickTrue();
         }
     }
 }

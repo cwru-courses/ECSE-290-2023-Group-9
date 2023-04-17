@@ -24,6 +24,7 @@ public class DialogManager : MonoBehaviour
     
     public void ShowDialog(string[] givenLine)
     {
+        DoorZero.SetClickFalse(); 
         clicks = 0;
         dialogText.text = string.Empty;
         speech = true;
@@ -77,6 +78,7 @@ public class DialogManager : MonoBehaviour
         {
             dialogBox.SetActive(false);
             speech = false;
+            DoorZero.SetClickTrue();
         }
     }
 

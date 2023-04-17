@@ -33,13 +33,31 @@ public class DoorZero : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (canClick) { Debug.Log("Clicked on " + gameObject.name); }// print a message to the console when the user clicks on the object
-        dialogManager.ShowDialog(DoorZerolines);
+        if (canClick)
+        {
+            //canClick = false; 
+            Debug.Log("Clicked on " + gameObject.name);
+            dialogManager.ShowDialog(DoorZerolines);
+            //Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+            //StartCoroutine(waitForText());
+        }// print a message to the console when the user clicks on the object
+
     }
 
-    public static void SetClick()
+    public static void SetClickTrue()
     {
         canClick=true;
+    }
+
+    public static void SetClickFalse()
+    {
+        canClick = false;
+    }
+
+    IEnumerator waitForText()
+    {
+        yield return new WaitForSeconds(7f);
+        SetClickTrue();
     }
 
 }

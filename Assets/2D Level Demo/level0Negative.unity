@@ -3093,6 +3093,7 @@ MonoBehaviour:
     to carry on with my work so I can head home soon. (Use the arrow keys to move)
     (Click to continue)
   textSpeed: 0.125
+  dialogueTypingSoundClip: {fileID: 8300000, guid: 0ba50ccb3b279d344acd7a7ddac9e2cd, type: 3}
 --- !u!1 &1310166914
 GameObject:
   m_ObjectHideFlags: 0

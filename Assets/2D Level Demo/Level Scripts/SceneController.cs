@@ -17,6 +17,12 @@ public class SceneController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+            Debug.Log("Quit Pressed!");
+        }
+
         if (state == GameState.FreeRoam)
         {
             playerController.HandleUpdate();
