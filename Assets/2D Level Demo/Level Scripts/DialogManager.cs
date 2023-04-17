@@ -13,6 +13,8 @@ public class DialogManager : MonoBehaviour
     private int index;
     private bool speech;
 
+    private int clicks;
+
     //public static DialogManager Instance {  get; private set; }
 
     private void Start()
@@ -22,6 +24,7 @@ public class DialogManager : MonoBehaviour
     
     public void ShowDialog(string[] givenLine)
     {
+        clicks = 0;
         dialogText.text = string.Empty;
         speech = true;
         lines = givenLine;
@@ -37,12 +40,14 @@ public class DialogManager : MonoBehaviour
         if (speech) {
             if (Input.GetMouseButtonDown(0))
             {
+                clicks++;
                 if (dialogText.text == lines[index])
                 {
                     NextLines();
                 }
-                else
+                else if (clicks >1)
                 {
+                    //Debug.Log("HERE");
                     StopAllCoroutines();
                     dialogText.text = lines[index];
                 }
@@ -56,7 +61,7 @@ public class DialogManager : MonoBehaviour
         foreach (char c in lines[index].ToCharArray())
         {
             dialogText.text += c;
-            yield return new WaitForSeconds(10f);
+            yield return new WaitForSeconds(.06f);
         }
     }
 
