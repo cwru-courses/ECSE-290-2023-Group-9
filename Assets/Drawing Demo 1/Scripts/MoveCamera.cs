@@ -6,7 +6,7 @@ public class MoveCamera : MonoBehaviour
 {
     private Vector3 CameraPosition;
     private bool hasRun = true;
-    public bool inNotebook = true;
+    public static bool inNotebook = false;
 
     // Start is called before the first frame update
     void Start()
@@ -17,11 +17,13 @@ public class MoveCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (inNotebook && Input.GetKey(KeyCode.RightArrow) && hasRun == true){
+        if (inNotebook && Input.GetKey(KeyCode.P) && hasRun == true
+            // && whatever the x coordinate bound is
+            ){
             StartCoroutine(TurnPageRight());
         }
 
-        if (inNotebook && Input.GetKey(KeyCode.LeftArrow) && hasRun == true)
+        if (inNotebook && Input.GetKey(KeyCode.O) && hasRun == true)
         {
             StartCoroutine(TurnPageLeft());
         }
@@ -31,8 +33,9 @@ public class MoveCamera : MonoBehaviour
 
     IEnumerator TurnPageRight()
     {
+        CameraPosition = this.transform.position;
         hasRun = false;
-        CameraPosition.x += 20;
+        CameraPosition.x += 13;
         this.transform.position = CameraPosition;
         yield return new  WaitForSeconds(.5f);
         hasRun = true;
@@ -41,8 +44,9 @@ public class MoveCamera : MonoBehaviour
 
     IEnumerator TurnPageLeft()
     {
+        CameraPosition = this.transform.position;
         hasRun = false;
-        CameraPosition.x -= 20;
+        CameraPosition.x -= 13;
         this.transform.position = CameraPosition;
         yield return new WaitForSeconds(.5f);
         hasRun = true;

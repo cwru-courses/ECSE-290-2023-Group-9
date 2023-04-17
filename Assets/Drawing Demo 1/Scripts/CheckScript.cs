@@ -44,7 +44,7 @@ public class CheckScript : MonoBehaviour
         {
             if (CountingHits.numHitCon2 == 27 && CountingHits.badHit2 < 1)
             {
-                Debug.Log("Constellation 1 is right");
+                Debug.Log("Constellation 2 is right");
             }
 
             if (CountingHits.badHit2 > 0)
@@ -73,7 +73,7 @@ public class CheckScript : MonoBehaviour
         {
             if (CountingHits.numHitCon3 == 24 && CountingHits.badHit3 < 1)
             {
-                Debug.Log("Constellation 1 is right");
+                Debug.Log("Constellation 3 is right");
             }
 
             if (CountingHits.badHit3 > 0)
