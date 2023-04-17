@@ -9,6 +9,8 @@ public class DialogManager : MonoBehaviour
     [SerializeField] GameObject dialogBox;
     public TextMeshProUGUI dialogText;
 
+    
+
     public string[] lines;
     private int index;
     private bool speech;

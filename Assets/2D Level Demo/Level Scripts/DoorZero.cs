@@ -5,6 +5,8 @@ using UnityEngine;
 public class DoorZero : MonoBehaviour
 {
     public Texture2D cursorTexture;
+    public Sprite sprite;  
+    public Sprite highlightSprite; 
     private static bool canClick;
 
     public DialogManager dialogManager;
@@ -21,14 +23,24 @@ public class DoorZero : MonoBehaviour
     {
         
     }
+    // private void onMouseOver() {
+    //     if(canClick) {
+            
+    //     }
+    // }
+
     private void OnMouseEnter()
     {
-        if (canClick) { Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto); } // change the mouse icon to the specified texture when the mouse enters the object
+        if (canClick) { 
+            Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto); 
+            transform.GetComponent<SpriteRenderer>().sprite = highlightSprite;
+        } // change the mouse icon to the specified texture when the mouse enters the object
     }
 
     private void OnMouseExit()
     {
         if (canClick){ Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);}// reset the mouse icon to the default when the mouse exits the object
+        transform.GetComponent<SpriteRenderer>().sprite = sprite; 
     }
 
     private void OnMouseDown()
