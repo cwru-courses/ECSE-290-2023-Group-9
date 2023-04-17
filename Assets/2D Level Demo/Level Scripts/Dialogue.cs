@@ -15,12 +15,10 @@ public class Dialogue : MonoBehaviour
     private int index;
 
     //Audio Playing On Every Character
-
     [Header("Audio")]
-
     [SerializeField] private AudioClip dialogueTypingSoundClip;
-
     private AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,11 +57,16 @@ public class Dialogue : MonoBehaviour
 
     IEnumerator TypeLine()
     {
+        int counter = 0;
         foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed/3);
-            audioSource.PlayOneShot(dialogueTypingSoundClip);
+            if (counter % 2 == 0)
+            {
+                audioSource.PlayOneShot(dialogueTypingSoundClip);
+            }
+            counter++;
         }
     }
 

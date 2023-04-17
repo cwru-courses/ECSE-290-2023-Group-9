@@ -3618,6 +3618,7 @@ MonoBehaviour:
   dialogBox: {fileID: 1250953625}
   dialogText: {fileID: 1310166916}
   lines: []
+  dialogueTypingSoundClip: {fileID: 8300000, guid: 0ba50ccb3b279d344acd7a7ddac9e2cd, type: 3}
 --- !u!1 &1848160826
 GameObject:
   m_ObjectHideFlags: 0

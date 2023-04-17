@@ -17,9 +17,15 @@ public class DialogManager : MonoBehaviour
 
     //public static DialogManager Instance {  get; private set; }
 
+    //Audio Playing On Every Character
+    [Header("Audio")]
+    [SerializeField] private AudioClip dialogueTypingSoundClip;
+    private AudioSource audioSource;
+
     private void Start()
     {
         speech = false;
+        audioSource = this.gameObject.AddComponent<AudioSource>();
     }
     
     public void ShowDialog(string[] givenLine)
@@ -61,8 +67,14 @@ public class DialogManager : MonoBehaviour
     {
         foreach (char c in lines[index].ToCharArray())
         {
+            int counter = 0;
             dialogText.text += c;
             yield return new WaitForSeconds(.06f);
+            if (counter % 2 == 0)
+            {
+                audioSource.PlayOneShot(dialogueTypingSoundClip);
+            }
+            counter++;
         }
     }
 

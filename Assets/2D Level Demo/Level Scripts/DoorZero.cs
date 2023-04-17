@@ -38,7 +38,7 @@ public class DoorZero : MonoBehaviour
             //canClick = false; 
             Debug.Log("Clicked on " + gameObject.name);
             dialogManager.ShowDialog(DoorZerolines);
-            //Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+            Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
             //StartCoroutine(waitForText());
         }// print a message to the console when the user clicks on the object
 
