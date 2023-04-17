@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
 
+    private bool isIntro;
+
     private int index;
     // Start is called before the first frame update
     void Start()
     {
+        isIntro = true;
         textComponent.text = string.Empty;
         StartDialogue();
     }
@@ -20,15 +24,19 @@ public class Dialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (isIntro)
         {
-            if(textComponent.text == lines[index])
+            if (Input.GetMouseButtonDown(0))
             {
-                NextLine();
-            } else
-            {
-                StopAllCoroutines();
-                textComponent.text = lines[index];//
+                if (textComponent.text == lines[index])
+                {
+                    NextLine();
+                }
+                else
+                {
+                    StopAllCoroutines();
+                    textComponent.text = lines[index];
+                }
             }
         }
     }
@@ -58,6 +66,8 @@ public class Dialogue : MonoBehaviour
         } else
         {
             gameObject.SetActive(false);
+            isIntro = false;
+            DoorZero.SetClick();
         }
     }
 }

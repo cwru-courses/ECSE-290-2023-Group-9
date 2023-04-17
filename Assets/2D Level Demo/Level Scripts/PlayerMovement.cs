@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void HandleUpdate()
     {
         //var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         //if(Input.GetMouseButtonDown(0))
