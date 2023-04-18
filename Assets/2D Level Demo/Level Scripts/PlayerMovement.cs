@@ -30,19 +30,23 @@ public class PlayerMovement : MonoBehaviour
         //var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         //if(Input.GetMouseButtonDown(0))
         //{
-            //followSpot = new Vector2(mousePosition.x, transform.position.y);
+        //followSpot = new Vector2(mousePosition.x, transform.position.y);
         //}
         //transform.position = Vector2.MoveTowards(transform.position, followSpot, Time.deltaTime * speed);
-        dirX = Input.GetAxisRaw("Horizontal"); // get horizontal input from arrow keys
-        Vector3 position = transform.position; // get current position of the sprite
 
-        // adjust x position based on horizontal input and speed
-        position.x += dirX * speed * Time.deltaTime;
+        if (!MoveCamera.inNotebook)
+        {
+            dirX = Input.GetAxisRaw("Horizontal"); // get horizontal input from arrow keys
+            Vector3 position = transform.position; // get current position of the sprite
 
-        // set the sprite's new position
-        transform.position = position;
+            // adjust x position based on horizontal input and speed
+            position.x += dirX * speed * Time.deltaTime;
 
-        UpdateAnimation();
+            // set the sprite's new position
+            transform.position = position;
+
+            UpdateAnimation();
+        }
     }
 
     private void UpdateAnimation()

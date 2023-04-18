@@ -26,15 +26,16 @@ public class DrawManager : MonoBehaviour
     {
         Vector2 mousePos = _cam.ScreenToWorldPoint(Input.mousePosition);
 
-        if (OnPage.validDraw)
+        if (OnPage.validDraw == true)
         {
             //Debug.Log("validDraw");
             if (Input.GetMouseButtonDown(0)) { 
                 _currentLine = Instantiate(_linePrefab, mousePos, Quaternion.identity); 
                 _lines.Add(_currentLine);
+            } 
+            if (Input.GetMouseButton(0) && _currentLine != null) {
+                    _currentLine.SetPosition(mousePos);
             }
-
-            if (Input.GetMouseButton(0)) { _currentLine.SetPosition(mousePos); }
         }
     }
 
