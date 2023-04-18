@@ -165,6 +165,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70217ea96852b498a90698cbbdd62623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &84480456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1276973213173636067, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
+  m_PrefabInstance: {fileID: 1276973213941303016}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &188495212
 GameObject:
   m_ObjectHideFlags: 0
@@ -2705,6 +2710,8 @@ GameObject:
   - component: {fileID: 1111803260}
   - component: {fileID: 1111803261}
   - component: {fileID: 1111803262}
+  - component: {fileID: 1111803263}
+  - component: {fileID: 1111803264}
   m_Layer: 0
   m_Name: Open Door
   m_TagString: Untagged
@@ -2723,7 +2730,8 @@ Transform:
   m_LocalPosition: {x: -14.93, y: 11.43, z: -0.5}
   m_LocalScale: {x: 0.679179, y: 0.6512537, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1979224885}
   m_Father: {fileID: 1442013477}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2796,6 +2804,46 @@ MonoBehaviour:
   DoorZerolines: []
   sprite: {fileID: 21300000, guid: 42941b1c9574cd949aa00c5fc83bfae7, type: 3}
   highlightSprite: {fileID: 21300000, guid: 938178f1231b36b4a8cdba56ce83383f, type: 3}
+--- !u!114 &1111803263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111803259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519c9b2eabdb54ebea1208e47f713620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  professorMan: {fileID: 84480456}
+  transportDestination: {fileID: 1733023622}
+--- !u!61 &1111803264
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111803259}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.28, y: 4.34}
+    newSize: {x: 2.28, y: 4.34}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.28, y: 4.34}
+  m_EdgeRadius: 0
 --- !u!61 &1120927896 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 4126809221640697748, guid: 1d52d90075d624adb83d58c4c36e62b6, type: 3}
@@ -2810,6 +2858,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1125331748}
+  - component: {fileID: 1125331749}
   m_Layer: 0
   m_Name: Player teleport
   m_TagString: Untagged
@@ -2825,13 +2874,39 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125331747}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 1.95, z: -10}
+  m_LocalPosition: {x: 0.78, y: 0.26, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1917738261}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1125331749
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125331747}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1148887910
 GameObject:
   m_ObjectHideFlags: 0
@@ -5440,6 +5515,7 @@ GameObject:
   - component: {fileID: 1619027622}
   - component: {fileID: 1619027621}
   - component: {fileID: 1619027620}
+  - component: {fileID: 1619027623}
   m_Layer: 0
   m_Name: Door1
   m_TagString: Untagged
@@ -5458,7 +5534,8 @@ Transform:
   m_LocalPosition: {x: 14.32, y: -2.4797997, z: 0.1}
   m_LocalScale: {x: 2.6526682, y: 2.316349, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1733023623}
   m_Father: {fileID: 1442013477}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5559,6 +5636,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1619027623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619027618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519c9b2eabdb54ebea1208e47f713620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  professorMan: {fileID: 84480456}
+  transportDestination: {fileID: 1979224884}
 --- !u!1 &1677499553
 GameObject:
   m_ObjectHideFlags: 0
@@ -5775,6 +5866,37 @@ MonoBehaviour:
   - I always loved how she signed her name, Liv, dotting her i's with hearts
   sprite: {fileID: -760700393, guid: 30f28d0ce84a04561a21ba3de3de5606, type: 3}
   highlightSprite: {fileID: -1376705672, guid: 30f28d0ce84a04561a21ba3de3de5606, type: 3}
+--- !u!1 &1733023622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1733023623}
+  m_Layer: 0
+  m_Name: teleport Lower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1733023623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733023622}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1619027619}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1755571060
 GameObject:
   m_ObjectHideFlags: 0
@@ -6279,7 +6401,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1276973213173636088, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
   m_PrefabInstance: {fileID: 1276973213941303016}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 84480456}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff5da462341a13340a632a49170c3b8c, type: 3}
@@ -6614,6 +6736,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7235854543334714692, guid: 1f9f3efa4a9267b4a9e9dc25bc727c5c, type: 3}
   m_PrefabInstance: {fileID: 7235854543520402143}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1979224884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1979224885}
+  m_Layer: 0
+  m_Name: Teleport Upper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1979224885
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979224884}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1111803260}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1995329045
 GameObject:
   m_ObjectHideFlags: 0
@@ -7638,7 +7791,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 11.950012
+      value: 11.949951
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_AnchoredPosition.y
