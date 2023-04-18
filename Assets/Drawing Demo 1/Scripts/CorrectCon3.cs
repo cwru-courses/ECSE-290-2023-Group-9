@@ -21,11 +21,13 @@ public class CorrectCon3 : MonoBehaviour
 
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity);
-            if (hit.collider.transform == this.transform)
+            if (hit != false)
             {
-                StartCoroutine(GotHit());
+                if (hit.collider.transform == this.transform)
+                {
+                    StartCoroutine(GotHit());
+                }
             }
-
         }
 
     }
