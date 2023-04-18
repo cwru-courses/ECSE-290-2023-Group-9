@@ -5,7 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Drawing Demo 1/DrawingDemo.unity
     guid: 1b5a73d98320d2b44be41d64f532cae4
+  - enabled: 1
+    path: Assets/2D Level Demo/Start.unity
+    guid: d1d63ef202b852648b0d35d0772988f0
+  - enabled: 1
+    path: Assets/2D Level Demo/Instruction.unity
+    guid: d825fcbf4eaecc342ba13c812f3f0499
+  - enabled: 1
+    path: Assets/2D Level Demo/level0Negative.unity
+    guid: a09ffc2e41867e64ab8550682e87093a
   m_configObjects: {}
