@@ -241,13 +241,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68666009}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.51, y: 15.02, z: 0.04}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.03, y: 13.059999, z: 1.25}
   m_LocalScale: {x: 6.6785417, y: 6.6785417, z: 6.6785417}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 1442013477}
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &188495212
 GameObject:
@@ -1935,8 +1935,8 @@ MonoBehaviour:
   highlightSprite: {fileID: -1340846810, guid: 9520a137f44784e95a90c2f05273833f, type: 3}
   dialogManager: {fileID: 1828137519}
   DoorZerolines:
-  - Taking a closer look at this star map...
-  - I notice the HEART nebula near the Cassiopeia constellation.
+  - i look more closely at the star map...
+  - i notice the heart nebula near the cassiopeia constellation.
 --- !u!1001 &809037955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5282,6 +5282,7 @@ Transform:
   - {fileID: 1308720388}
   - {fileID: 840529119}
   - {fileID: 417554051}
+  - {fileID: 68666011}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5616,8 +5617,8 @@ MonoBehaviour:
   highlightSprite: {fileID: 274503212, guid: 66a890f89957049598a7f6d9b2b46636, type: 3}
   dialogManager: {fileID: 1828137519}
   DoorZerolines:
-  - The window shows a clear view of the Moon.
-  - ... It makes you think about how much you and your wife loved stargazing.
+  - The window shows a clear view of the moon.
+  - ... it makes me think about how much my wife and i loved to stargaze
 --- !u!61 &1773966558
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7060,11 +7061,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1276973213173636069, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.92
+      value: -9.33
       objectReference: {fileID: 0}
     - target: {fileID: 1276973213173636069, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.37
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1276973213173636069, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7190,7 +7191,7 @@ PrefabInstance:
     - target: {fileID: 5314002232088876834, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+      objectReference: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
     - target: {fileID: 5314002232088876834, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_fontSizeBase
       value: 55
@@ -7198,7 +7199,7 @@ PrefabInstance:
     - target: {fileID: 5314002232088876834, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+      objectReference: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
     - target: {fileID: 5314002232088876837, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_SizeDelta.x
       value: 1665.2
