@@ -21,7 +21,7 @@ public class OnPage : MonoBehaviour
             RaycastHit2D hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity);
             if (hit != false)
             {
-                if (hit.collider.transform != null)//hit.collider.transform.name == "RightPage")
+                if (hit.collider.transform.name == "RightPage")
                 {
 
                     validDraw = true;
