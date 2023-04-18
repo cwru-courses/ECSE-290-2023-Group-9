@@ -7216,6 +7216,19 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -30
       objectReference: {fileID: 0}
+    - target: {fileID: 5314002232164602171, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5314002232164602171, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: reminiscing on the good ol' days as a professor of astronomy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5314002232164602171, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: i would love to search my old workplace to draw some of my favorite
+        constellations
+      objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
