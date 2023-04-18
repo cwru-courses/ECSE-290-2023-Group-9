@@ -26,7 +26,7 @@ public class DrawManager : MonoBehaviour
     {
         Vector2 mousePos = _cam.ScreenToWorldPoint(Input.mousePosition);
 
-        if (OnPage.validDraw == true)
+        if (OnPage.validDraw == true && _cam.transform.position.x > -300 && _cam.transform.position.x < -250)
         {
             //Debug.Log("validDraw");
             if (Input.GetMouseButtonDown(0)) { 

@@ -74,6 +74,7 @@ public class CheckScript : MonoBehaviour
             if (CountingHits.numHitCon3 == 24 && CountingHits.badHit3 < 1)
             {
                 Debug.Log("Constellation 3 is right");
+                SceneController.setDrawn();
             }
 
             if (CountingHits.badHit3 > 0)
