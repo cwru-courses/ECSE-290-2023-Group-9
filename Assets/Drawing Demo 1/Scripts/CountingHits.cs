@@ -16,8 +16,8 @@ public class CountingHits : MonoBehaviour
     //TODELETE eventually...
     //you win pop up for game demo
 
-    [SerializeField] private GameObject youWinTexts;
-    RectTransform youWinText;
+    //[SerializeField] private GameObject youWinTexts;
+    //RectTransform youWinText;
     public BoxCollider2D[] reactivateTime;
     // Start is called before the first frame update
     void Start()
@@ -28,8 +28,8 @@ public class CountingHits : MonoBehaviour
         //TODELETE eventually...
         //you win pop up
         //youWinTexts = GameObject.Find("uwuTxt");
-        youWinTexts.SetActive(false);
-        youWinText = youWinTexts.GetComponent<RectTransform>();
+        //youWinTexts.SetActive(false);
+        //youWinText = youWinTexts.GetComponent<RectTransform>();
     }
 
 
@@ -59,15 +59,16 @@ public class CountingHits : MonoBehaviour
     {
         numHit += 1;
         Debug.Log(numHit);
+        Debug.Log("HI");
         Destroy(gameObject);
         yield return new WaitForSeconds(.1f);
     }
 
     IEnumerator Win()
     {
-        youWinTexts.SetActive(true);
+        //youWinTexts.SetActive(true);
         yield return new WaitForSeconds(2f);
-        youWinTexts.SetActive(false);
+        //youWinTexts.SetActive(false);
     }
 
      public void EnableChildComponents()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CorrectCon1 : MonoBehaviour
 {
-    BoxCollider2D part;
+    private BoxCollider2D part;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +21,14 @@ public class CorrectCon1 : MonoBehaviour
 
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity);
-            if (hit.collider.transform == this.transform)
+            //if (hit.collider.transform != null && part.transform != null && hit.collider.transform == part.transform) 
+            if (hit != false)
             {
-                StartCoroutine(GotHit());
+                if (hit.collider.transform == part.transform)
+                {
+                    StartCoroutine(GotHit());
+                }
             }
-
         }
 
     }
@@ -34,9 +37,10 @@ public class CorrectCon1 : MonoBehaviour
 
     IEnumerator GotHit()
     {
+        part.enabled = false;
         CountingHits.numHitCon1 += 1;
         // Debug.Log(numHit);
-        part.enabled = false;
+        //part.enabled = false;
         //Destroy(gameObject);
         yield return null;
         //yield return new WaitForSeconds(.1f);

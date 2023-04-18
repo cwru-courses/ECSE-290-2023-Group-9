@@ -33,23 +33,30 @@ public class MoveCamera : MonoBehaviour
 
     IEnumerator TurnPageRight()
     {
+        
         CameraPosition = this.transform.position;
-        hasRun = false;
-        CameraPosition.x += 13;
-        this.transform.position = CameraPosition;
-        yield return new  WaitForSeconds(.5f);
-        hasRun = true;
-
+        //Debug.Log(CameraPosition.x);
+        if (CameraPosition.x < -280)
+        {
+            hasRun = false;
+            CameraPosition.x += 13;
+            this.transform.position = CameraPosition;
+            yield return new WaitForSeconds(.5f);
+            hasRun = true;
+        }
     }
 
     IEnumerator TurnPageLeft()
     {
         CameraPosition = this.transform.position;
-        hasRun = false;
-        CameraPosition.x -= 13;
-        this.transform.position = CameraPosition;
-        yield return new WaitForSeconds(.5f);
-        hasRun = true;
-
+        //Debug.Log(CameraPosition.x);
+        if (CameraPosition.x > -290)
+        {
+            hasRun = false;
+            CameraPosition.x -= 13;
+            this.transform.position = CameraPosition;
+            yield return new WaitForSeconds(.5f);
+            hasRun = true;
+        }
     }
 }
