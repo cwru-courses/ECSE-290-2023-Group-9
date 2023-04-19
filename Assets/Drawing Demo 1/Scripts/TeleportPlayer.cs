@@ -24,11 +24,13 @@ public class TeleportPlayer : MonoBehaviour
 
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity);
-            if (hit.collider.transform == this.transform)
+            if (hit != false)
             {
-                StartCoroutine(StairsMoment());
+                if (hit.collider.transform == this.transform)
+                {
+                    StartCoroutine(StairsMoment());
+                }
             }
-
         }
     }
 
