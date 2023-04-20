@@ -32,21 +32,25 @@ public class DrawManager : MonoBehaviour
             //Debug.Log("validDraw");
             if (Input.GetMouseButtonDown(0)) { 
                 _currentLine = Instantiate(_linePrefab, mousePos, Quaternion.identity); 
-                _lines.Add(_currentLine);
-                
+                _lines.Add(_currentLine);              
             } 
+
             if (Input.GetMouseButton(0) && _currentLine != null) {
                     _currentLine.SetPosition(mousePos);
                 audioSource.enabled = true;
             } else
             {
-                audioSource.enabled = false;
+               audioSource.enabled = false;
             }
+        } else
+        {
+            audioSource.enabled = false;
         }
     }
 
     public void Delete()
     {
+        audioSource.enabled = false;
         Debug.Log("Delete Clicked!");
         StartCoroutine(Deleting());
      //   StartCoroutine(resetLine());
