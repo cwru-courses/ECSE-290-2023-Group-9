@@ -26,18 +26,22 @@ public class DialogManager : MonoBehaviour
     {
         speech = false;
         audioSource = this.gameObject.AddComponent<AudioSource>();
+        index = 0;
     }
     
     public void ShowDialog(string[] givenLine)
     {
-        DoorZero.SetClickFalse(); 
-        clicks = 0;
-        dialogText.text = string.Empty;
-        speech = true;
-        lines = givenLine;
-        index = 0;
-        dialogBox.SetActive(true);
-        StartCoroutine(TypeDialog());
+        if (givenLine != null)
+        {
+            DoorZero.SetClickFalse();
+            clicks = 0;
+            dialogText.text = string.Empty;
+            speech = true;
+            lines = givenLine;
+            index = 0;
+            dialogBox.SetActive(true);
+            StartCoroutine(TypeDialog());
+        }
     }
 
 

@@ -12,8 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     private float dirX = 0f;
 
-    //2D Point and Click Attempt!
-    //private Vector2 followSpot;
+    public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -55,15 +54,18 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("running", true);
             sprite.flipX = false;
+            audioSource.enabled = true;
         }
         else if (dirX < 0f)
         {
             anim.SetBool("running", true);
             sprite.flipX = true;
+            audioSource.enabled = true;
         }
         else
         {
             anim.SetBool("running", false);
+            audioSource.enabled = false;
         }
     }
 

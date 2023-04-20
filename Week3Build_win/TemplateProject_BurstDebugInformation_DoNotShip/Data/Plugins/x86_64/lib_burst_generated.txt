@@ -131,9 +131,9 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\zanny\OneDrive\Documents\GitHub\ECSE-290-2023-Group-9\Temp\StagingArea\Data\Managed\Unity.Timeline.dll
 --root-assembly=C:\Users\zanny\OneDrive\Documents\GitHub\ECSE-290-2023-Group-9\Temp\StagingArea\Data\Managed\Unity.TextMeshPro.dll
 --root-assembly=C:\Users\zanny\OneDrive\Documents\GitHub\ECSE-290-2023-Group-9\Temp\StagingArea\Data\Managed\Unity.Services.Core.Environments.Internal.dll
+--root-assembly=C:\Users\zanny\OneDrive\Documents\GitHub\ECSE-290-2023-Group-9\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
 --root-assembly=C:\Users\zanny\OneDrive\Documents\GitHub\ECSE-290-2023-Group-9\Temp\StagingArea\Data\Managed\Unity.Burst.dll
 --root-assembly=C:\Users\zanny\OneDrive\Documents\GitHub\ECSE-290-2023-Group-9\Temp\StagingArea\Data\Managed\Unity.2D.Animation.Runtime.dll
---root-assembly=C:\Users\zanny\OneDrive\Documents\GitHub\ECSE-290-2023-Group-9\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
 --root-assembly=C:\Users\zanny\OneDrive\Documents\GitHub\ECSE-290-2023-Group-9\Temp\StagingArea\Data\Managed\Unity.2D.Tilemap.Extras.dll
 --root-assembly=C:\Users\zanny\OneDrive\Documents\GitHub\ECSE-290-2023-Group-9\Temp\StagingArea\Data\Managed\Unity.2D.IK.Runtime.dll
 --root-assembly=C:\Users\zanny\OneDrive\Documents\GitHub\ECSE-290-2023-Group-9\Temp\StagingArea\Data\Managed\Unity.Services.Core.Configuration.dll
@@ -287,9 +287,9 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\zanny\OneDrive\Documents\GitHub\ECSE-290-2023-Group-9\Temp\StagingArea\Data\Managed\Unity.Timeline.dll
 --root-assembly=C:\Users\zanny\OneDrive\Documents\GitHub\ECSE-290-2023-Group-9\Temp\StagingArea\Data\Managed\Unity.TextMeshPro.dll
 --root-assembly=C:\Users\zanny\OneDrive\Documents\GitHub\ECSE-290-2023-Group-9\Temp\StagingArea\Data\Managed\Unity.Services.Core.Environments.Internal.dll
+--root-assembly=C:\Users\zanny\OneDrive\Documents\GitHub\ECSE-290-2023-Group-9\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
 --root-assembly=C:\Users\zanny\OneDrive\Documents\GitHub\ECSE-290-2023-Group-9\Temp\StagingArea\Data\Managed\Unity.Burst.dll
 --root-assembly=C:\Users\zanny\OneDrive\Documents\GitHub\ECSE-290-2023-Group-9\Temp\StagingArea\Data\Managed\Unity.2D.Animation.Runtime.dll
---root-assembly=C:\Users\zanny\OneDrive\Documents\GitHub\ECSE-290-2023-Group-9\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
 --root-assembly=C:\Users\zanny\OneDrive\Documents\GitHub\ECSE-290-2023-Group-9\Temp\StagingArea\Data\Managed\Unity.2D.Tilemap.Extras.dll
 --root-assembly=C:\Users\zanny\OneDrive\Documents\GitHub\ECSE-290-2023-Group-9\Temp\StagingArea\Data\Managed\Unity.2D.IK.Runtime.dll
 --root-assembly=C:\Users\zanny\OneDrive\Documents\GitHub\ECSE-290-2023-Group-9\Temp\StagingArea\Data\Managed\Unity.Services.Core.Configuration.dll

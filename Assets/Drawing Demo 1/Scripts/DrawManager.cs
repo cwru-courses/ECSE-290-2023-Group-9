@@ -15,6 +15,7 @@ public class DrawManager : MonoBehaviour
 
     private List<Line> _lines;
 
+    public AudioSource audioSource;
     void Start()
     {
         _cam = Camera.main;
@@ -32,9 +33,14 @@ public class DrawManager : MonoBehaviour
             if (Input.GetMouseButtonDown(0)) { 
                 _currentLine = Instantiate(_linePrefab, mousePos, Quaternion.identity); 
                 _lines.Add(_currentLine);
+                
             } 
             if (Input.GetMouseButton(0) && _currentLine != null) {
                     _currentLine.SetPosition(mousePos);
+                audioSource.enabled = true;
+            } else
+            {
+                audioSource.enabled = false;
             }
         }
     }

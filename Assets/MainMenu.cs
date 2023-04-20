@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+
+
     public void StartGame()
     {
-            SceneManager.LoadScene(sceneName: "level0Negative");
+        SceneManager.LoadScene(sceneName: "level0Negative");
+        BGmusic.instance.GetComponent<AudioSource>().Pause();
     }
 
     public void SwitchToStart()
@@ -35,4 +38,5 @@ public class MainMenu : MonoBehaviour
             Debug.Log("Quit Pressed!");
         }
     }
+
 }
