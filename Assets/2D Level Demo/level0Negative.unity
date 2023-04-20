@@ -2722,8 +2722,8 @@ GameObject:
   m_Component:
   - component: {fileID: 971272182}
   - component: {fileID: 971272181}
-  - component: {fileID: 971272183}
   - component: {fileID: 971272184}
+  - component: {fileID: 971272183}
   m_Layer: 0
   m_Name: blackboard_0
   m_TagString: Untagged
@@ -2791,7 +2791,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 971272180}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1800003, y: -0.44979978, z: -0.25}
+  m_LocalPosition: {x: -0.1800003, y: -0.44979978, z: 0}
   m_LocalScale: {x: 0.8204687, y: 0.8204687, z: 0.8204687}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2810,9 +2810,9 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: -0.025031567, y: 0.14349937}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2823,7 +2823,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.93402, y: 4.875866}
+  m_Size: {x: 9, y: 6.75}
   m_EdgeRadius: 0
 --- !u!114 &971272184
 MonoBehaviour:
@@ -5773,7 +5773,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319443600}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7519,8 +7519,8 @@ GameObject:
   - component: {fileID: 1867946419}
   - component: {fileID: 1867946423}
   - component: {fileID: 1867946422}
-  - component: {fileID: 1867946421}
   - component: {fileID: 1867946420}
+  - component: {fileID: 1867946424}
   m_Layer: 0
   m_Name: Cup Hint 1
   m_TagString: Untagged
@@ -7536,7 +7536,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867946418}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7555,25 +7555,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a66f8245df8410fa2f0be955208060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1867946421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1867946418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eada0b4f938ad04699e1652cffacda1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  dialogManager: {fileID: 1828137519}
-  DoorZerolines:
-  - i can't believe this is still on the blackboard!
-  - it's how i taught my students to draw constellations in their notebooks...
-  sprite: {fileID: 710510808, guid: 76afecf907efe489ba6517639cdad4eb, type: 3}
-  highlightSprite: {fileID: 432136259, guid: 76afecf907efe489ba6517639cdad4eb, type: 3}
 --- !u!61 &1867946422
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7652,6 +7633,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1867946424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867946418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eada0b4f938ad04699e1652cffacda1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 0}
+  dialogManager: {fileID: 1828137519}
+  DoorZerolines:
+  - i can't believe this is still on the blackboard!
+  - it's how i taught my students to draw constellations in their notebooks...
+  sprite: {fileID: 710510808, guid: 76afecf907efe489ba6517639cdad4eb, type: 3}
+  highlightSprite: {fileID: 432136259, guid: 76afecf907efe489ba6517639cdad4eb, type: 3}
 --- !u!1 &1880582237
 GameObject:
   m_ObjectHideFlags: 0
@@ -9476,7 +9476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1276973213173636071, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_Size.y
-      value: 0.635912
+      value: 0.5700821
       objectReference: {fileID: 0}
     - target: {fileID: 1276973213173636071, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_Offset.x
@@ -9484,7 +9484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1276973213173636071, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_Offset.y
-      value: -0.013163358
+      value: 0.019751579
       objectReference: {fileID: 0}
     - target: {fileID: 1276973213173636071, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
