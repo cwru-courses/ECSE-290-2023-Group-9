@@ -5,6 +5,11 @@ using UnityEngine;
 public class CheckScript : MonoBehaviour
 {
 
+    public static bool drawing_1_Complete = false;
+    public static bool drawing_2_Complete = false;
+    public static bool drawing_3_Complete = false;
+
+
     public void CheckDrawing1()
     {
 
@@ -17,6 +22,7 @@ public class CheckScript : MonoBehaviour
             if (CountingHits.numHitCon1 == 23 && CountingHits.badHit1 < 1)
             {
                 Debug.Log("Constellation 1 is right");
+                drawing_1_Complete = true;
             }
 
             if (CountingHits.badHit1 > 0)
@@ -45,6 +51,7 @@ public class CheckScript : MonoBehaviour
             if (CountingHits.numHitCon2 == 27 && CountingHits.badHit2 < 1)
             {
                 Debug.Log("Constellation 2 is right");
+                drawing_2_Complete = true;
             }
 
             if (CountingHits.badHit2 > 0)
@@ -74,7 +81,8 @@ public class CheckScript : MonoBehaviour
             if (CountingHits.numHitCon3 == 24 && CountingHits.badHit3 < 1)
             {
                 Debug.Log("Constellation 3 is right");
-                SceneController.setDrawn();
+                drawing_3_Complete = true;
+              //  SceneController.setDrawn();
             }
 
             if (CountingHits.badHit3 > 0)
