@@ -1,13 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class CheckScript : MonoBehaviour
 {
-
+    public PlayableDirector director3;
     public static bool drawing_1_Complete = false;
     public static bool drawing_2_Complete = false;
     public static bool drawing_3_Complete = false;
+    private bool firstTime3 = true;
+
+    DrawManager drawDelete;
+
+
+
+    private void Start()
+    {
+        drawDelete = GameObject.FindGameObjectWithTag("Draw Manager").GetComponent<DrawManager>();
+    }
 
 
     public void CheckDrawing1()
@@ -82,6 +93,7 @@ public class CheckScript : MonoBehaviour
             {
                 Debug.Log("Constellation 3 is right");
                 drawing_3_Complete = true;
+                StartCoroutine(HeartFadeIn());
               //  SceneController.setDrawn();
             }
 
@@ -97,6 +109,19 @@ public class CheckScript : MonoBehaviour
         }
 
 
+    }
+
+
+
+    IEnumerator HeartFadeIn()
+    {
+        if (firstTime3 == true)
+        {
+            firstTime3 = false;
+            drawDelete.Delete();
+            director3.Play();
+        }
+        yield return null;
     }
 
 }
