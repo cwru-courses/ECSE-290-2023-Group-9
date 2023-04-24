@@ -19,13 +19,16 @@ public class DialogManager : MonoBehaviour
 
     //Audio Playing On Every Character
     [Header("Audio")]
-    [SerializeField] private AudioClip dialogueTypingSoundClip;
-    private AudioSource audioSource;
+    //[SerializeField] private AudioClip dialogueTypingSoundClip;
+    //private AudioSource audioSource;
+    private AudioClip dialogueTypingSoundClip; //unserialized field
+    [SerializeField] private AudioSource audioSource;
 
     private void Start()
     {
         speech = false;
-        audioSource = this.gameObject.AddComponent<AudioSource>();
+        //audioSource = this.gameObject.AddComponent<AudioSource>();
+        dialogueTypingSoundClip = audioSource.clip;
         index = 0;
     }
     
