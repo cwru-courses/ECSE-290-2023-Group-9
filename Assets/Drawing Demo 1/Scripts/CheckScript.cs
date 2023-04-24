@@ -10,6 +10,8 @@ public class CheckScript : MonoBehaviour
     public static bool drawing_2_Complete = false;
     public static bool drawing_3_Complete = false;
     private bool firstTime3 = true;
+    private bool firstTime2 = true;
+    private bool firstTime1 = true;
 
     DrawManager drawDelete;
 
@@ -34,6 +36,7 @@ public class CheckScript : MonoBehaviour
             {
                 Debug.Log("Constellation 1 is right");
                 drawing_1_Complete = true;
+                StartCoroutine(FeatherFadeIn());
             }
 
             if (CountingHits.badHit1 > 0)
@@ -63,6 +66,7 @@ public class CheckScript : MonoBehaviour
             {
                 Debug.Log("Constellation 2 is right");
                 drawing_2_Complete = true;
+                StartCoroutine(CupFadeIn());
             }
 
             if (CountingHits.badHit2 > 0)
@@ -118,6 +122,29 @@ public class CheckScript : MonoBehaviour
         if (firstTime3 == true)
         {
             firstTime3 = false;
+            drawDelete.Delete();
+            director3.Play();
+        }
+        yield return null;
+    }
+
+
+    IEnumerator CupFadeIn()
+    {
+        if (firstTime2 == true)
+        {
+            firstTime2 = false;
+            drawDelete.Delete();
+            director3.Play();
+        }
+        yield return null;
+    }
+
+    IEnumerator FeatherFadeIn()
+    {
+        if (firstTime1 == true)
+        {
+            firstTime1 = false;
             drawDelete.Delete();
             director3.Play();
         }
