@@ -16,8 +16,8 @@ public class Dialogue : MonoBehaviour
 
     //Audio Playing On Every Character
     [Header("Audio")]
-    [SerializeField] private AudioClip dialogueTypingSoundClip;
-    private AudioSource audioSource;
+    private AudioClip dialogueTypingSoundClip; //unserialized field
+    [SerializeField] private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,8 @@ public class Dialogue : MonoBehaviour
         textComponent.text = string.Empty;
         StartDialogue();
 
-        audioSource = this.gameObject.AddComponent<AudioSource>();
+        //audioSource = this.gameObject.AddComponent<AudioSource>();
+        dialogueTypingSoundClip = audioSource.clip;
     }
 
     // Update is called once per frame
