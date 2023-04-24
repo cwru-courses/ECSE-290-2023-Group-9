@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TelescopeCheck : MonoBehaviour
 {
+    public Sprite sprite;  
+    public Sprite highlightSprite; 
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,23 @@ public class TelescopeCheck : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void OnMouseEnter()
+    {
+        if (
+            //CheckScript.drawing_1_Complete &&
+            CheckScript.drawing_2_Complete &&
+            CheckScript.drawing_3_Complete)
+        {  
+                transform.GetComponent<SpriteRenderer>().sprite = highlightSprite;
+        } 
+    }
+
+    private void OnMouseExit()
+    {
+        transform.GetComponent<SpriteRenderer>().sprite = sprite; 
+        
     }
 
     IEnumerator EndCheck()
