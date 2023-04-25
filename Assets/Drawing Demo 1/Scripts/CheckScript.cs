@@ -53,6 +53,8 @@ public class CheckScript : MonoBehaviour
             {
                 Debug.Log("Are you sure you're drawing constellation 1?");
                 audioSourceW.Play();
+                Vector3 mousePos = Input.mousePosition;
+                Debug.Log("Mouse position: " + mousePos);
             }
 
             if (CountingHits.numHitCon1 < 23 && CountingHits.badHit1 < 1)
