@@ -1,0 +1,1508 @@
+fileFormatVersion: 2
+guid: 3887164ea1ff745a48f92ef87864e8ae
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 876
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b968fc5fc284c4293a6182eb48953da1
+      internalID: -596495904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 876
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b808ed26e538b4c758075566a30af828
+      internalID: 468427650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 876
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ca54f7561c646a7bc96e156994368e
+      internalID: -126167493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 876
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5a2235aae0a44abbbb57e00236d18d
+      internalID: 1760354058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 876
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98b8f330fdfa4098a6015ca7a55d07d
+      internalID: 745615699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 803
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb7863f326d846e68be582d4d7f5aa3
+      internalID: -390291025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 803
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef9aa1ae41304ced973d678961c3514
+      internalID: 654610224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 803
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bcd32989c184bf9a68be5a1c4466a4
+      internalID: 1139536407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 803
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13d149412f99400090cf9561940500e
+      internalID: 2028222986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 803
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafe959951f8b42459af309232b88954
+      internalID: 1220926825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 730
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca7f6076298b40b4b01e35881c89cb0
+      internalID: -603872523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 730
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601f814290e234c32917b8494cb344bf
+      internalID: 2065421489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 730
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08fed5ea194c64ce6be3a68050f77c9a
+      internalID: -1098720662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 730
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b84c25d389f442668199f779f53e536
+      internalID: -330520260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 730
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404435600e23b4d579c328e93bcb7bae
+      internalID: 1732403204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 657
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98934aab6ce4f451e9c794709dfa519e
+      internalID: 1888654892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_16
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 657
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d4c1a4c2acd40eda5ff3fa41f24d1f
+      internalID: -1941654675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_17
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 657
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c65e3e01182547a3b33eb7cc51ef87c
+      internalID: 856322186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_18
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 657
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b1df929bf2a4df481015d2457ff2df
+      internalID: 1749328801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_19
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 657
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7617dbd573e44468924aa354b8b98b8
+      internalID: 1932090135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 584
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f677beb329548228d8afb41762cfe8
+      internalID: -897741572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_21
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 584
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c388c8c41cf45f1948e4fb14753b67
+      internalID: 749717092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_22
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 584
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e15bb2fc606147e4abbae253b121eb3
+      internalID: -129492902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_23
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 584
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4152773a7068a4fb589c1417723c0cae
+      internalID: -1483321187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_24
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 584
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8193dc52164ca4d8a9395f3e8ceb2db8
+      internalID: 1915081563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 511
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a96cdf40a2d4b3b91371a7465ae26c
+      internalID: -1801595187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_26
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 511
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a063cdf83aa4a349540255da5673e1
+      internalID: 1022558265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_27
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 511
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12fbe22133424d379574308658f2173
+      internalID: 1106700166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_28
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 511
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360dce3098c0a44c5abe3094c9e1a878
+      internalID: -1568503573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_29
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 511
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79a66ebabd664e719d6be5b02f628a4
+      internalID: 308837177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 438
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d83f15981ab46388a6d7e2c0605326
+      internalID: 455668070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_31
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 438
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf922ae565557406ebfacf5cf54d5d3d
+      internalID: 1825317411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_32
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 438
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0711eb931afd4e47b335e8d0ca5eb59
+      internalID: -341242017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_33
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 438
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6167fa7c3ca084566bb4b48bf0b52535
+      internalID: -157780660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_34
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 438
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649d2f7e47d554c48a08413d6003c148
+      internalID: 1173056340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 365
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4259afef441204d2eb3bc898a4687e32
+      internalID: 1015532124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_36
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 365
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656fd84b0a4024f299bf6f9093f3f7e6
+      internalID: -496408374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_37
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 365
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04057f83d48ca4ca2ba4e2a09770d1e4
+      internalID: 1408692774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_38
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 365
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3bf6dd48ca914677bf27a1fc0f1983f
+      internalID: 443025421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_39
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 365
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c4673217da449a8b5fdb06ff73b92b
+      internalID: -1255882074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 292
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96398e2abe03245218b557219ee41a85
+      internalID: 784078354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_41
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 292
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a8cf69e6d4a4c69a67d7c9aa9f1780
+      internalID: 1643181323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_42
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 292
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf3eed7598f945268b175b93cfdd6b9
+      internalID: 482967383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_43
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 292
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2301314ce3bd44890a7bf508d66956c9
+      internalID: -1245994791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_44
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 292
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11114728d659432a9c6e59a8574182c
+      internalID: -1156881154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 219
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b49716546ba34987a599dba655c806e
+      internalID: -866747220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_46
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 219
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5821ac4271794930b31348df34e529f
+      internalID: 93747532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_47
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 219
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da9235f7946f647fbaa8b45f0ad5323d
+      internalID: 689712015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_48
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 219
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f7578d1eb574258ad30cb8b0af3ce4
+      internalID: -997657603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_49
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 219
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f902302c65a44732b35814cfa4674f2
+      internalID: 785875296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 146
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8a95a65a90b43c489bf9f293270d04
+      internalID: 1836367538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_51
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 146
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9df94cd397047f6a51abaab9a0782b
+      internalID: -1099389138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_52
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 146
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92cb415fd7664339a743f627a64a900
+      internalID: -1064197838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_53
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 146
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b23ff4bdd0694b1e8b145b4144d0ff8
+      internalID: 2083075223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_54
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 146
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d27d8e052444bfa9fa4788ddee139f
+      internalID: -160769353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 73
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f06cbf796bc45f7bd2dd832750593f
+      internalID: -1057954427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_56
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 73
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f571f5148821473c9444a9ee144898c
+      internalID: 1629434851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_57
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 73
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35bb8c5ad52354a05812c217dd7f58cb
+      internalID: 656875110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_58
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 73
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: addec075712604226b4cb5943100f562
+      internalID: 28623000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_59
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 73
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b690e1e2ed79b4f02bcc87a60734330d
+      internalID: 1099141619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac21edb2fdaff4e63a5cdac071639fdf
+      internalID: -1388356347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_61
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1603a8fefae524ea5a236491a356074a
+      internalID: -1852110903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackboard-anim-sprite-sheet_62
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564148fd60d1b49ed8ef28377584c1d0
+      internalID: -669802583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      blackboard-anim-sprite-sheet_29: 308837177
+      blackboard-anim-sprite-sheet_14: 1732403204
+      blackboard-anim-sprite-sheet_46: 93747532
+      blackboard-anim-sprite-sheet_47: 689712015
+      blackboard-anim-sprite-sheet_17: 856322186
+      blackboard-anim-sprite-sheet_10: -603872523
+      blackboard-anim-sprite-sheet_22: -129492902
+      blackboard-anim-sprite-sheet_38: 443025421
+      blackboard-anim-sprite-sheet_4: 745615699
+      blackboard-anim-sprite-sheet_25: -1801595187
+      blackboard-anim-sprite-sheet_34: 1173056340
+      blackboard-anim-sprite-sheet_43: -1245994791
+      blackboard-anim-sprite-sheet_31: 1825317411
+      blackboard-anim-sprite-sheet_62: -669802583
+      blackboard-anim-sprite-sheet_53: 2083075223
+      blackboard-anim-sprite-sheet_7: 1139536407
+      blackboard-anim-sprite-sheet_35: 1015532124
+      blackboard-anim-sprite-sheet_16: -1941654675
+      blackboard-anim-sprite-sheet_6: 654610224
+      blackboard-anim-sprite-sheet_39: -1255882074
+      blackboard-anim-sprite-sheet_49: 785875296
+      blackboard-anim-sprite-sheet_1: 468427650
+      blackboard-anim-sprite-sheet_12: -1098720662
+      blackboard-anim-sprite-sheet_59: 1099141619
+      blackboard-anim-sprite-sheet_55: -1057954427
+      blackboard-anim-sprite-sheet_32: -341242017
+      blackboard-anim-sprite-sheet_2: -126167493
+      blackboard-anim-sprite-sheet_51: -1099389138
+      blackboard-anim-sprite-sheet_40: 784078354
+      blackboard-anim-sprite-sheet_5: -390291025
+      blackboard-anim-sprite-sheet_48: -997657603
+      blackboard-anim-sprite-sheet_28: -1568503573
+      blackboard-anim-sprite-sheet_3: 1760354058
+      blackboard-anim-sprite-sheet_41: 1643181323
+      blackboard-anim-sprite-sheet_21: 749717092
+      blackboard-anim-sprite-sheet_56: 1629434851
+      blackboard-anim-sprite-sheet_42: 482967383
+      blackboard-anim-sprite-sheet_18: 1749328801
+      blackboard-anim-sprite-sheet_60: -1388356347
+      blackboard-anim-sprite-sheet_36: -496408374
+      blackboard-anim-sprite-sheet_50: 1836367538
+      blackboard-anim-sprite-sheet_20: -897741572
+      blackboard-anim-sprite-sheet_23: -1483321187
+      blackboard-anim-sprite-sheet_19: 1932090135
+      blackboard-anim-sprite-sheet_33: -157780660
+      blackboard-anim-sprite-sheet_24: 1915081563
+      blackboard-anim-sprite-sheet_54: -160769353
+      blackboard-anim-sprite-sheet_52: -1064197838
+      blackboard-anim-sprite-sheet_44: -1156881154
+      blackboard-anim-sprite-sheet_57: 656875110
+      blackboard-anim-sprite-sheet_26: 1022558265
+      blackboard-anim-sprite-sheet_45: -866747220
+      blackboard-anim-sprite-sheet_61: -1852110903
+      blackboard-anim-sprite-sheet_0: -596495904
+      blackboard-anim-sprite-sheet_30: 455668070
+      blackboard-anim-sprite-sheet_15: 1888654892
+      blackboard-anim-sprite-sheet_13: -330520260
+      blackboard-anim-sprite-sheet_27: 1106700166
+      blackboard-anim-sprite-sheet_58: 28623000
+      blackboard-anim-sprite-sheet_8: 2028222986
+      blackboard-anim-sprite-sheet_11: 2065421489
+      blackboard-anim-sprite-sheet_9: 1220926825
+      blackboard-anim-sprite-sheet_37: 1408692774
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
