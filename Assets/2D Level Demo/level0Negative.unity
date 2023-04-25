@@ -165,6 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70217ea96852b498a90698cbbdd62623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 57215719}
 --- !u!114 &57215715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,6 +190,102 @@ MonoBehaviour:
   closeButton: {fileID: 1920723342}
   checkButton: {fileID: 256072781}
   clearButton: {fileID: 2064773011}
+--- !u!82 &57215719
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57215706}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ad986a992d411814da1e31dc9753e981, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &61586839
 GameObject:
   m_ObjectHideFlags: 0
@@ -2860,6 +2957,7 @@ GameObject:
   - component: {fileID: 778555011}
   - component: {fileID: 778555010}
   - component: {fileID: 778555009}
+  - component: {fileID: 778555012}
   m_Layer: 0
   m_Name: NotebookCamera
   m_TagString: MainCamera
@@ -2894,6 +2992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70217ea96852b498a90698cbbdd62623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 778555012}
 --- !u!81 &778555010
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2945,6 +3044,102 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!82 &778555012
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778555007}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ad986a992d411814da1e31dc9753e981, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.634
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &785917765
 GameObject:
   m_ObjectHideFlags: 0
@@ -7137,8 +7332,7 @@ MonoBehaviour:
   cursorTexture: {fileID: 0}
   dialogManager: {fileID: 1828137519}
   DoorZerolines:
-  - i look at my old desk in the classroom and notice the tropy i won for being a
-    great professor...
+  - Ah look! The trophy I got for being a great professor! So kind of my students...
   sprite: {fileID: 2068526436, guid: 84cce7698e7b343f9ba1f80f38d00d9d, type: 3}
   highlightSprite: {fileID: 509650796, guid: 84cce7698e7b343f9ba1f80f38d00d9d, type: 3}
 --- !u!61 &1319443604
@@ -8164,8 +8358,8 @@ MonoBehaviour:
   cursorTexture: {fileID: 0}
   dialogManager: {fileID: 1828137519}
   DoorZerolines:
-  - Looking out the window, i can see a bright full moon.
-  - It reminds me of how I used to stargaze with my wife
+  - Wow, a full moon out tonight with a sky filled with stars!
+  - I loved stargazing with Liv
   sprite: {fileID: 754320364, guid: 66a890f89957049598a7f6d9b2b46636, type: 3}
   highlightSprite: {fileID: -673513454, guid: 66a890f89957049598a7f6d9b2b46636, type: 3}
 --- !u!114 &1499936861
@@ -9411,7 +9605,8 @@ MonoBehaviour:
   dialogManager: {fileID: 1828137519}
   DoorZerolines:
   - i can't believe this is still on the blackboard!
-  - it's how i taught my students to draw constellations in their notebooks...
+  - I forgot to erase today's constellation drawing from lecture. I sure hope my
+    students took good notes...
   sprite: {fileID: 710510808, guid: 76afecf907efe489ba6517639cdad4eb, type: 3}
   highlightSprite: {fileID: 432136259, guid: 76afecf907efe489ba6517639cdad4eb, type: 3}
 --- !u!1 &1880582237
@@ -10487,8 +10682,8 @@ MonoBehaviour:
   cursorTexture: {fileID: 0}
   dialogManager: {fileID: 1828137519}
   DoorZerolines:
-  - Opening the drawer, I see an old note from my wife after the first time you took
-    her here.
+  - Ah hah! An old note from my wife. Life is full of surprises and old filing drawers
+    can pack a lot of nostalgia. We always liked this place.
   - I always loved how she signed her name, Liv, dotting her i's with hearts
   sprite: {fileID: -760700393, guid: 30f28d0ce84a04561a21ba3de3de5606, type: 3}
   highlightSprite: {fileID: -1376705672, guid: 30f28d0ce84a04561a21ba3de3de5606, type: 3}
@@ -11834,7 +12029,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232088876837, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602171, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: audioSource
@@ -11883,6 +12078,10 @@ PrefabInstance:
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_SizeDelta.y
       value: -903.315
+      objectReference: {fileID: 0}
+    - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_LocalPosition.x

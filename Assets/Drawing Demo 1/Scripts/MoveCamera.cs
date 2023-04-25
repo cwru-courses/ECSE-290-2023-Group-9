@@ -8,10 +8,16 @@ public class MoveCamera : MonoBehaviour
     private bool hasRun = true;
     public static bool inNotebook = false;
 
+    [Header("Page Flip Audio")]
+    private AudioClip flipClip; //unserialized field
+    [SerializeField] private AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
         CameraPosition = this.transform.position;
+        flipClip = audioSource.clip;
+        audioSource.time = 1.05f;
     }
 
     // Update is called once per frame
@@ -20,11 +26,13 @@ public class MoveCamera : MonoBehaviour
         if (inNotebook && Input.GetKey(KeyCode.P) && hasRun == true
             // && whatever the x coordinate bound is
             ){
+            audioSource.Play();
             StartCoroutine(TurnPageRight());
         }
 
         if (inNotebook && Input.GetKey(KeyCode.O) && hasRun == true)
         {
+            audioSource.Play();
             StartCoroutine(TurnPageLeft());
         }
 

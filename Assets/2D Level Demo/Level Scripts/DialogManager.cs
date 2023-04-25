@@ -55,15 +55,18 @@ public class DialogManager : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 clicks++;
-                if (dialogText.text == lines[index])
+                if(index < lines.Length)
                 {
-                    NextLines();
-                }
-                else if (clicks >1)
-                {
-                    //Debug.Log("HERE");
-                    StopAllCoroutines();
-                    dialogText.text = lines[index];
+                    if (dialogText.text == lines[index])
+                    {
+                        NextLines();
+                    }
+                    else if (clicks > 1)
+                    {
+                        //Debug.Log("HERE");
+                        StopAllCoroutines();
+                        dialogText.text = lines[index];
+                    }
                 }
             }
         }
