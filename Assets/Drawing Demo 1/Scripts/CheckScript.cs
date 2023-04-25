@@ -15,11 +15,20 @@ public class CheckScript : MonoBehaviour
 
     DrawManager drawDelete;
 
+    [Header("wrongAudio")]
+    private AudioClip wrongClip; //unserialized field
+    [SerializeField] private AudioSource audioSourceW;
+
+    [Header("rightAudio")]
+    private AudioClip rightClip; //unserialized field
+    [SerializeField] private AudioSource audioSourceR;
 
 
     private void Start()
     {
         drawDelete = GameObject.FindGameObjectWithTag("Draw Manager").GetComponent<DrawManager>();
+        wrongClip = audioSourceW.clip;
+        rightClip = audioSourceR.clip;
     }
 
 
@@ -34,6 +43,7 @@ public class CheckScript : MonoBehaviour
         {
             if (CountingHits.numHitCon1 == 23 && CountingHits.badHit1 < 1)
             {
+                audioSourceR.Play();
                 Debug.Log("Constellation 1 is right");
                 drawing_1_Complete = true;
                 StartCoroutine(FeatherFadeIn());
@@ -42,11 +52,13 @@ public class CheckScript : MonoBehaviour
             if (CountingHits.badHit1 > 0)
             {
                 Debug.Log("Are you sure you're drawing constellation 1?");
+                audioSourceW.Play();
             }
 
             if (CountingHits.numHitCon1 < 23 && CountingHits.badHit1 < 1)
             {
                 Debug.Log("Missing a few boxes");
+                audioSourceW.Play();
             }
         }
 
@@ -64,6 +76,7 @@ public class CheckScript : MonoBehaviour
         {
             if (CountingHits.numHitCon2 == 27 && CountingHits.badHit2 < 1)
             {
+                audioSourceR.Play();
                 Debug.Log("Constellation 2 is right");
                 drawing_2_Complete = true;
                 StartCoroutine(CupFadeIn());
@@ -72,11 +85,13 @@ public class CheckScript : MonoBehaviour
             if (CountingHits.badHit2 > 0)
             {
                 Debug.Log("Are you sure you're drawing constellation 2?");
+                audioSourceW.Play();
             }
 
             if (CountingHits.numHitCon2 < 27 && CountingHits.badHit2 < 1)
             {
                 Debug.Log("Missing a few boxes");
+                audioSourceW.Play();
             }
         }
 
@@ -95,6 +110,7 @@ public class CheckScript : MonoBehaviour
         {
             if (CountingHits.numHitCon3 == 24 && CountingHits.badHit3 < 1)
             {
+                audioSourceR.Play();
                 Debug.Log("Constellation 3 is right");
                 drawing_3_Complete = true;
                 StartCoroutine(HeartFadeIn());
@@ -104,11 +120,13 @@ public class CheckScript : MonoBehaviour
             if (CountingHits.badHit3 > 0)
             {
                 Debug.Log("Are you sure you're drawing constellation 3?");
+                audioSourceW.Play();
             }
 
             if (CountingHits.numHitCon3 < 24 && CountingHits.badHit3 < 1)
             {
                 Debug.Log("Missing a few boxes");
+                audioSourceW.Play();
             }
         }
 

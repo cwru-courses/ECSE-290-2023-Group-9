@@ -55,8 +55,8 @@ public class DialogManager : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 clicks++;
-                if(index < lines.Length)
-                {
+                //if(index < lines.Length)
+                //{
                     if (dialogText.text == lines[index])
                     {
                         NextLines();
@@ -67,7 +67,7 @@ public class DialogManager : MonoBehaviour
                         StopAllCoroutines();
                         dialogText.text = lines[index];
                     }
-                }
+                //}
             }
         }
     }
