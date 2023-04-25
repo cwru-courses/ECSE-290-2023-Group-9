@@ -26,13 +26,13 @@ public class MoveCamera : MonoBehaviour
         if (inNotebook && Input.GetKey(KeyCode.P) && hasRun == true
             // && whatever the x coordinate bound is
             ){
-            audioSource.Play();
+            //audioSource.Play();
             StartCoroutine(TurnPageRight());
         }
 
         if (inNotebook && Input.GetKey(KeyCode.O) && hasRun == true)
         {
-            audioSource.Play();
+            //audioSource.Play();
             StartCoroutine(TurnPageLeft());
         }
 
@@ -46,6 +46,7 @@ public class MoveCamera : MonoBehaviour
         //Debug.Log(CameraPosition.x);
         if (CameraPosition.x < -280)
         {
+            audioSource.Play();
             hasRun = false;
             CameraPosition.x += 13;
             this.transform.position = CameraPosition;
@@ -60,6 +61,7 @@ public class MoveCamera : MonoBehaviour
         //Debug.Log(CameraPosition.x);
         if (CameraPosition.x > -290)
         {
+            audioSource.Play();
             hasRun = false;
             CameraPosition.x -= 13;
             this.transform.position = CameraPosition;

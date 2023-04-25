@@ -16,10 +16,18 @@ public class DrawManager : MonoBehaviour
     private List<Line> _lines;
 
     public AudioSource audioSource;
+
+    //erase noise
+    [Header("Erase Audio")]
+    private AudioClip eraseClip; //unserialized field
+    [SerializeField] private AudioSource audioSourceE;
+
     void Start()
     {
         _cam = Camera.main;
         _lines = new List<Line>();
+
+        eraseClip = audioSourceE.clip;
     }
 
     // Update is called once per frame
@@ -50,6 +58,7 @@ public class DrawManager : MonoBehaviour
 
     public void Delete()
     {
+        audioSourceE.Play();
         audioSource.enabled = false;
         Debug.Log("Delete Clicked!");
         StartCoroutine(Deleting());
