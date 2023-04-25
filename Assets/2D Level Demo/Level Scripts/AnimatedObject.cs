@@ -29,6 +29,7 @@ public class AnimatedObject : MonoBehaviour
 
     private void OnMouseEnter()
     {
+        Debug.Log("is hovering");
         anim.SetBool("playAnimation", true);
     }
 
