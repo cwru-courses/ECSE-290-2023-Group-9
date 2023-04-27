@@ -162,8 +162,8 @@ MonoBehaviour:
   - On the right is where I draw my constellations.
   - Flip pages with O to flip left and P to flip right
   - The pages are numbered in the bottom corner. Let's try the first drawing, the
-    feather!. Try your best and click the check mark when you think you have it.
-    You can always clear the page using the 'X' and try again. Goodluck!
+    feather! Try your best and click the check mark when you think you have it. You
+    can always clear the page using the 'X' and try again. Goodluck!
   audioSource: {fileID: 57215723}
 --- !u!114 &57215711
 MonoBehaviour:
@@ -4489,7 +4489,7 @@ GameObject:
   - component: {fileID: 913538556}
   - component: {fileID: 913538555}
   m_Layer: 0
-  m_Name: 2023-04-17 (10)
+  m_Name: Feather Demo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4554,13 +4554,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913538554}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -294.9827, y: 58.8286, z: 0.1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -304.198, y: 56.8888, z: -0.4}
   m_LocalScale: {x: 0.6596895, y: 0.6595869, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 1442013477}
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &915837758 stripped
 BoxCollider2D:
@@ -8787,6 +8787,7 @@ Transform:
   - {fileID: 1953216959}
   - {fileID: 366218209}
   - {fileID: 1432857703}
+  - {fileID: 913538556}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
