@@ -68,6 +68,7 @@ public class Dialogue : MonoBehaviour
                 audioSource.PlayOneShot(dialogueTypingSoundClip);
             }
             counter++;
+           // yield return new WaitForSeconds(textSpeed / 3);
         }
     }
 

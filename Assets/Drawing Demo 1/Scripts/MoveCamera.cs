@@ -7,6 +7,7 @@ public class MoveCamera : MonoBehaviour
     private Vector3 CameraPosition;
     private bool hasRun = true;
     public static bool inNotebook = false;
+    //private static bool first;
 
     [Header("Page Flip Audio")]
     private AudioClip flipClip; //unserialized field
@@ -18,6 +19,7 @@ public class MoveCamera : MonoBehaviour
         CameraPosition = this.transform.position;
         flipClip = audioSource.clip;
         audioSource.time = 1.05f;
+       //first = true;
     }
 
     // Update is called once per frame

@@ -10,6 +10,10 @@ public class TeleportCamera : MonoBehaviour
     public GameObject notebookSpot;
     public GameObject playerSpot;
 
+    private static bool first;
+    public DialogManager dM;
+    public string[] drawTutorial;
+
     [Header("Page Flip Audio")]
     private AudioClip flipClip; //unserialized field
     [SerializeField] private AudioSource audioSource;
@@ -20,6 +24,7 @@ public class TeleportCamera : MonoBehaviour
         CameraPosition = this.transform.position;
         flipClip = audioSource.clip;
         audioSource.time = 1.05f;
+        first = true;
     }
 
     // Update is called once per frame
@@ -30,6 +35,11 @@ public class TeleportCamera : MonoBehaviour
 
     public void NotebookMoment()
     {
+        if (first)
+        {
+            dM.ShowDialog(drawTutorial);
+            first = false;
+        }
         mainCam.gameObject.transform.position = notebookSpot.gameObject.transform.position;
         MoveCamera.inNotebook = true;
         audioSource.Play();

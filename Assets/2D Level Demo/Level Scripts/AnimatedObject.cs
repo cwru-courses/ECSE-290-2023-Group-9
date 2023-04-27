@@ -21,13 +21,7 @@ public class AnimatedObject : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnMouseEnter()
+        private void OnMouseOver()
     {
         Debug.Log("is hovering");
         anim.SetBool("playAnimation", true);

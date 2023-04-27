@@ -79,13 +79,14 @@ public class DialogManager : MonoBehaviour
         {
             int counter = 0;
             dialogText.text += c;
-            yield return new WaitForSeconds(.06f);
+            //yield return new WaitForSeconds(.06f);
             //yield return null;
             if (counter % 2 == 0)
             {
                 audioSource.PlayOneShot(dialogueTypingSoundClip);
             }
             counter++;
+            yield return new WaitForSeconds(.06f);
         }
     }
 
