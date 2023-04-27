@@ -13,7 +13,6 @@ public class AnimatedObject : MonoBehaviour
 
     //[SerializeField] private BoxCollider2D box;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -38,17 +37,20 @@ public class AnimatedObject : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (canClick)
+        // if (canClick)
+        // {
+        //canClick = false; 
+        // Debug.Log("Clicked on " + gameObject.name);
+        //dialogManager.ShowDialog(dialogLines);
+        // anim.SetBool("playAnimation", false);
+        // Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+        // StartCoroutine(waitForText());
+        //}// print a message to the console when the user clicks on the object
+        if (!DialogManager.isActive) 
         {
-            //canClick = false; 
             Debug.Log("Clicked on " + gameObject.name);
             dialogManager.ShowDialog(dialogLines);
-            // anim.SetBool("playAnimation", false);
-            // Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
-            // StartCoroutine(waitForText());
-        }// print a message to the console when the user clicks on the object
-        Debug.Log("Clicked on " + gameObject.name);
-        dialogManager.ShowDialog(dialogLines);
+        }
 
     }
 

@@ -12,6 +12,7 @@ public class Dialogue : MonoBehaviour
 
     private bool isIntro;
 
+
     private int index;
 
     //Audio Playing On Every Character

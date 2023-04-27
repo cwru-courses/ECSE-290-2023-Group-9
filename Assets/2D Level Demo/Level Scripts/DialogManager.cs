@@ -15,6 +15,8 @@ public class DialogManager : MonoBehaviour
 
     private int clicks;
 
+    public static bool isActive;
+
     //public static DialogManager Instance {  get; private set; }
 
     //Audio Playing On Every Character
@@ -43,6 +45,7 @@ public class DialogManager : MonoBehaviour
             lines = givenLine;
             index = 0;
             dialogBox.SetActive(true);
+            isActive = true;
             StartCoroutine(TypeDialog());
         }
     }
@@ -101,6 +104,7 @@ public class DialogManager : MonoBehaviour
         else
         {
             dialogBox.SetActive(false);
+            isActive = false;
             speech = false;
             DoorZero.SetClickTrue();
         }
