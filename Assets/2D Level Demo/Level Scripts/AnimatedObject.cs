@@ -11,6 +11,8 @@ public class AnimatedObject : MonoBehaviour
     private SpriteRenderer sprite;
     private Animator anim;
 
+    //[SerializeField] private BoxCollider2D box;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +23,7 @@ public class AnimatedObject : MonoBehaviour
         
     }
 
-        private void OnMouseOver()
+    private void OnMouseEnter()
     {
         Debug.Log("is hovering");
         anim.SetBool("playAnimation", true);
