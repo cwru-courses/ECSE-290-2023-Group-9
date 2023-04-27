@@ -14037,11 +14037,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5314002232088876834, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_margin.w
-      value: -72.08635
+      value: -64.24623
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232088876834, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_margin.y
-      value: -84.09514
+      value: -64.4949
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232088876834, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_fontAsset
