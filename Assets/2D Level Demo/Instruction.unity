@@ -704,12 +704,11 @@ MonoBehaviour:
     Collect clues and be sure to keep an organized notebook!
 
 
-    Goodluck
-    and thanks for playing :) PT, Zoe, Ben, Jess
+    Goodluck!
 
 
-    (Press escape to quit at anytime
-    - progress not saved!)'
+    (Press
+    escape to quit at anytime - progress not saved!)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}

@@ -535,14 +535,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Special thanks to Luis Mesias, Dr. Michael Fu, and the CSDS 290 at CWRU.
+  m_text: 'Special thanks to Luis Mesias, Dr. Michael Fu, and CSDS 290 at CWRU.
 
 
 
+    Best
+    wishes and Happy Exploring!
 
 
-    -
-    PT, Jess, Zoe, Ben
+    - PT, Jess, Zoe, Ben
 
 
     :)'
