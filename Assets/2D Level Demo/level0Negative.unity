@@ -156,14 +156,15 @@ MonoBehaviour:
   dM: {fileID: 1828137519}
   drawTutorial:
   - Ah hah! My trusty notebook. I always enjoy drawing my constellations here, but
-    it never hurts to review!
+    it never hurts to have a quick review!
   - On the left is where I keep my notes and hints, anything I can gather from the
     constellation I have to draw.
   - On the right is where I draw my constellations.
   - Flip pages with O to flip left and P to flip right
   - The pages are numbered in the bottom corner. Let's try the first drawing, the
-    feather! Try your best and click the check mark when you think you have it. You
-    can always clear the page using the 'X' and try again. Goodluck!
+    feather!
+  - Try your best and click the check mark when you think you have it. You can always
+    clear the page using the 'X' and try again. Goodluck!
   audioSource: {fileID: 57215723}
 --- !u!114 &57215711
 MonoBehaviour:
@@ -15094,6 +15095,10 @@ PrefabInstance:
       value: 181.704
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232088876837, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5314002232088876837, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -2.39
       objectReference: {fileID: 0}
@@ -15156,6 +15161,10 @@ PrefabInstance:
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0375
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_LocalPosition.x
