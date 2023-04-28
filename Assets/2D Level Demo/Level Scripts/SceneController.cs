@@ -17,8 +17,15 @@ public class SceneController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameObject obj = GameObject.Find("Background music");
+        // If the object exists, destroy it
+        if (obj != null)
+        {
+            Destroy(obj);
+        }
     }
+
+
 
     // Update is called once per frame
     void Update()
