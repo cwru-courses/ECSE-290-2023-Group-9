@@ -30,10 +30,10 @@ public class SceneController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (drawn)
-        {
-            SceneManager.LoadScene(sceneName: "End Scene");
-        }
+        //if (drawn)
+        //{
+        //    SceneManager.LoadScene(sceneName: "End Scene");
+        //}
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();

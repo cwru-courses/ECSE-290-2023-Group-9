@@ -6,12 +6,12 @@ using UnityEngine.Playables;
 public class CheckScript : MonoBehaviour
 {
     public PlayableDirector director3;
-    public static bool drawing_1_Complete = false;
-    public static bool drawing_2_Complete = false;
-    public static bool drawing_3_Complete = false;
-    private bool firstTime3 = true;
-    private bool firstTime2 = true;
-    private bool firstTime1 = true;
+    public static bool drawing_1_Complete;
+    public static bool drawing_2_Complete;
+    public static bool drawing_3_Complete;
+    private bool firstTime3;
+    private bool firstTime2;
+    private bool firstTime1;
 
     DrawManager drawDelete;
 
@@ -29,7 +29,15 @@ public class CheckScript : MonoBehaviour
         drawDelete = GameObject.FindGameObjectWithTag("Draw Manager").GetComponent<DrawManager>();
         wrongClip = audioSourceW.clip;
         rightClip = audioSourceR.clip;
-    }
+
+        drawing_1_Complete = false;
+        drawing_2_Complete = false;
+        drawing_3_Complete = false;
+
+        firstTime3 = true;
+        firstTime2 = true;
+        firstTime1 = true;
+}
 
 
     public void CheckDrawing1()

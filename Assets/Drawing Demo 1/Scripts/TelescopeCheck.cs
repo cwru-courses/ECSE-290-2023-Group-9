@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class TelescopeCheck : MonoBehaviour
 {
@@ -55,7 +57,8 @@ public class TelescopeCheck : MonoBehaviour
             CheckScript.drawing_3_Complete)
         {
             SceneController.setDrawn();
-           
+            SceneManager.LoadScene(sceneName: "End Scene");
+
         }
         else
         {
