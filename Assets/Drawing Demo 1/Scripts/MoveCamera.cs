@@ -25,6 +25,8 @@ public class MoveCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log(CameraPosition.x);
+
         if (inNotebook && Input.GetKey(KeyCode.P) && hasRun == true
             // && whatever the x coordinate bound is
             ){
