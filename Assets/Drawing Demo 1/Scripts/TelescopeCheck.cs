@@ -6,12 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class TelescopeCheck : MonoBehaviour
 {
-    public Sprite sprite;  
-    public Sprite highlightSprite; 
+    // public Sprite sprite;  
+    // public Sprite highlightSprite; 
+
+    private SpriteRenderer sprite;
+    private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
+        // sprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -30,24 +34,32 @@ public class TelescopeCheck : MonoBehaviour
                 }
             }
         }
-    }
 
-    private void OnMouseEnter()
-    {
         if (
             CheckScript.drawing_1_Complete &&
             CheckScript.drawing_2_Complete &&
             CheckScript.drawing_3_Complete)
         {  
-                transform.GetComponent<SpriteRenderer>().sprite = highlightSprite;
+                anim.SetBool("playAnimation", true);
         } 
     }
 
-    private void OnMouseExit()
+    private void OnMouseEnter()
     {
-        transform.GetComponent<SpriteRenderer>().sprite = sprite; 
-        
+        // if (
+        //     CheckScript.drawing_1_Complete &&
+        //     CheckScript.drawing_2_Complete &&
+        //     CheckScript.drawing_3_Complete)
+        // {  
+        //         transform.GetComponent<SpriteRenderer>().sprite = highlightSprite;
+        // } 
     }
+
+    // private void OnMouseExit()
+    // {
+    //     transform.GetComponent<SpriteRenderer>().sprite = sprite; 
+        
+    // }
 
     IEnumerator EndCheck()
     {
