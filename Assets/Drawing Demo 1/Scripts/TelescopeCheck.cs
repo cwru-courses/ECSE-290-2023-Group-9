@@ -35,7 +35,7 @@ public class TelescopeCheck : MonoBehaviour
     private void OnMouseEnter()
     {
         if (
-            //CheckScript.drawing_1_Complete &&
+            CheckScript.drawing_1_Complete &&
             CheckScript.drawing_2_Complete &&
             CheckScript.drawing_3_Complete)
         {  
@@ -52,7 +52,7 @@ public class TelescopeCheck : MonoBehaviour
     IEnumerator EndCheck()
     {
         if (
-            //CheckScript.drawing_1_Complete &&
+            CheckScript.drawing_1_Complete &&
             CheckScript.drawing_2_Complete &&
             CheckScript.drawing_3_Complete)
         {
