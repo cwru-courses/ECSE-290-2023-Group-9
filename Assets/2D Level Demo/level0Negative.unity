@@ -1045,6 +1045,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &297166124 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 655710256980884210, guid: 3c2c181ff40ea904cb8901787554ece0, type: 3}
+  m_PrefabInstance: {fileID: 655710256388499536}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &301654835
 GameObject:
   m_ObjectHideFlags: 0
@@ -3320,6 +3325,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 655710256980884212, guid: 3c2c181ff40ea904cb8901787554ece0, type: 3}
   m_PrefabInstance: {fileID: 655710256388499536}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &628167335
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297166124}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!61 &636365899 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 4126809221350136518, guid: 1d52d90075d624adb83d58c4c36e62b6, type: 3}
@@ -9780,8 +9806,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db65c7be69bb147cc9f7c69a160d5c71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
-  highlightSprite: {fileID: 0}
 --- !u!1 &1758864884
 GameObject:
   m_ObjectHideFlags: 0
@@ -9927,8 +9951,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db65c7be69bb147cc9f7c69a160d5c71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 1541918482, guid: ff144a86981be49959035fe0d6843142, type: 3}
-  highlightSprite: {fileID: 477736119, guid: ff144a86981be49959035fe0d6843142, type: 3}
 --- !u!1 &1767457221
 GameObject:
   m_ObjectHideFlags: 0
@@ -10132,8 +10154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db65c7be69bb147cc9f7c69a160d5c71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
-  highlightSprite: {fileID: 0}
 --- !u!1 &1810971886
 GameObject:
   m_ObjectHideFlags: 0
@@ -13696,9 +13716,13 @@ PrefabInstance:
       propertyPath: m_Simulated
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1276973213173636070, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1276973213173636071, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_Size.x
-      value: 0.37215382
+      value: 0.2876132
       objectReference: {fileID: 0}
     - target: {fileID: 1276973213173636071, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_Size.y
@@ -13706,7 +13730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1276973213173636071, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_Offset.x
-      value: 0.023794562
+      value: 0.066064864
       objectReference: {fileID: 0}
     - target: {fileID: 1276973213173636071, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_Offset.y
