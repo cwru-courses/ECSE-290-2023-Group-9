@@ -39,13 +39,13 @@ public class thankyou : MonoBehaviour
 
     IEnumerator ActivateTextAfterDelay2()
     {
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(5f);
         textComponent2.gameObject.SetActive(true);
     }
 
     IEnumerator ActivateTextAfterDelay3()
     {
-        yield return new WaitForSeconds(10.0f);
+        yield return new WaitForSeconds(9.0f);
         textComponent1.gameObject.SetActive(false);
         textComponent2.gameObject.SetActive(false);
         textComponent3.gameObject.SetActive(true);
@@ -53,7 +53,7 @@ public class thankyou : MonoBehaviour
 
     IEnumerator end1()
     {
-        yield return new WaitForSeconds(17.0f);
+        yield return new WaitForSeconds(16.0f);
         textComponent1.gameObject.SetActive(false);
         textComponent2.gameObject.SetActive(false);
         textComponent3.gameObject.SetActive(false);
@@ -61,7 +61,7 @@ public class thankyou : MonoBehaviour
 
     IEnumerator end2()
     {
-        yield return new WaitForSeconds(19.0f);
+        yield return new WaitForSeconds(18.0f);
         SceneManager.LoadScene("Start");
         //Application.LoadLevel(0);
     }
