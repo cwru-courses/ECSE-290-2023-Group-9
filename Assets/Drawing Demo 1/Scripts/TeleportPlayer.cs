@@ -17,7 +17,7 @@ public class TeleportPlayer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void cancelUpdate()
     {
         if (Input.GetMouseButtonDown(0) || Input.GetMouseButton(0))
         {
@@ -32,6 +32,12 @@ public class TeleportPlayer : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void OnMouseDown()
+    {
+            Debug.Log("Clicked on " + gameObject.name);
+            StartCoroutine(StairsMoment());
     }
 
     IEnumerator StairsMoment()

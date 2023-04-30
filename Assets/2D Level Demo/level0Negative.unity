@@ -158,11 +158,11 @@ MonoBehaviour:
   - Ah hah! My trusty notebook. I always enjoy drawing my constellations here, but
     it never hurts to have a quick review!
   - On the left is where I keep my notes and hints, anything I can gather from the
-    constellation I have to draw.
+    constellation I have to draw. (Hints appear here as you continue to explore)
   - On the right is where I draw my constellations.
   - Flip pages with O to flip left and P to flip right
   - The pages are numbered in the bottom corner. Let's try the first drawing, the
-    feather!
+    feather! Just give it your best!
   - Try your best and click the check mark when you think you have it. You can always
     clear the page using the 'X' and try again. Goodluck!
   audioSource: {fileID: 57215723}
@@ -3335,7 +3335,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 297166124}
   m_BodyType: 2
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -7388,7 +7388,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319443600}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.2}
+  m_LocalPosition: {x: 0, y: 0, z: -0.131}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11612,6 +11612,7 @@ MonoBehaviour:
   dialogManager: {fileID: 1828137519}
   DoorZerolines:
   - Pretty big galaxy out there! One of my favorite posters....
+  - ...a good reminder to never lose sight on what's important.
   sprite: {fileID: 21300000, guid: cf5a90440f9324d258b53301a6cfaf33, type: 3}
   highlightSprite: {fileID: 21300000, guid: cf5a90440f9324d258b53301a6cfaf33, type: 3}
 --- !u!61 &1963397214
@@ -13595,6 +13596,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 655710256980884210, guid: 3c2c181ff40ea904cb8901787554ece0, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 655710256980884212, guid: 3c2c181ff40ea904cb8901787554ece0, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -13609,7 +13614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 655710256980884212, guid: 3c2c181ff40ea904cb8901787554ece0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.5
+      value: -0.84
       objectReference: {fileID: 0}
     - target: {fileID: 655710256980884212, guid: 3c2c181ff40ea904cb8901787554ece0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13639,6 +13644,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 655710256980884213, guid: 3c2c181ff40ea904cb8901787554ece0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c2c181ff40ea904cb8901787554ece0, type: 3}
 --- !u!1001 &1276973213941303016
@@ -13651,6 +13660,10 @@ PrefabInstance:
     - target: {fileID: 1276973213173636067, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276973213173636067, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1276973213173636068, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_Sprite
@@ -13690,15 +13703,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1276973213173636069, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1276973213173636069, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1276973213173636069, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1276973213173636069, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -13713,12 +13726,40 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1276973213173636070, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
+      propertyPath: m_Mass
+      value: 4.6090336
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276973213173636070, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276973213173636070, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_Simulated
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276973213173636070, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276973213173636070, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276973213173636070, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276973213173636070, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
+      propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1276973213173636070, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_CollisionDetection
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276973213173636070, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
+      propertyPath: m_UseFullKinematicContacts
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1276973213173636071, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_Size.x
@@ -13727,6 +13768,10 @@ PrefabInstance:
     - target: {fileID: 1276973213173636071, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_Size.y
       value: 0.5700821
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276973213173636071, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1276973213173636071, guid: 9e74f1bfb35be8a4f9ee33175da76f7e, type: 3}
       propertyPath: m_Offset.x

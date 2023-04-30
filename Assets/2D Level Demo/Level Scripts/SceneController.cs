@@ -42,7 +42,7 @@ public class SceneController : MonoBehaviour
 
         if (state == GameState.FreeRoam)
         {
-            playerController.HandleUpdate();
+            //playerController.HandleUpdate();
         } else if (state == GameState.Dialog)
         {
 

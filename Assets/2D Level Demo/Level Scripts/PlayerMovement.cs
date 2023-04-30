@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     private float dirX = 0f;
 
+
     public AudioSource audioSource;
 
     // Start is called before the first frame update
@@ -24,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void HandleUpdate()
+    public void Update()
     {
         //var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         //if(Input.GetMouseButtonDown(0))
@@ -36,15 +37,33 @@ public class PlayerMovement : MonoBehaviour
         if (!MoveCamera.inNotebook)
         {
             dirX = Input.GetAxisRaw("Horizontal"); // get horizontal input from arrow keys
-            Vector3 position = transform.position; // get current position of the sprite
+
+            if(transform.position.x < -6.65 && dirX < 0)
+            {
+            } else if (transform.position.x > 25.3 && dirX > 0)
+            {
+            } else
+            {
+                Vector3 position = transform.position; // get current position of the sprite
+
+                // adjust x position based on horizontal input and speed
+                position.x += dirX * speed * Time.deltaTime;
+
+                // set the sprite's new position
+                transform.position = position;
+
+                UpdateAnimation();
+            }
+
+            //Vector3 position = transform.position; // get current position of the sprite
 
             // adjust x position based on horizontal input and speed
-            position.x += dirX * speed * Time.deltaTime;
+           // position.x += dirX * speed * Time.deltaTime;
 
             // set the sprite's new position
-            transform.position = position;
+            //transform.position = position;
 
-            UpdateAnimation();
+            //UpdateAnimation();
         }
     }
 
