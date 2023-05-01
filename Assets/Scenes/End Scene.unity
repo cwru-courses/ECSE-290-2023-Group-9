@@ -11124,7 +11124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232088876834, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_margin.x
-      value: 223.3916
+      value: 215.6275
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232088876834, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_margin.y
@@ -11204,7 +11204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602171, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: lines.Array.data[0]
-      value: Oh Olivia, how I've missed you.
+      value: Olivia, thank you for everything.
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_Pivot.x
@@ -11324,7 +11324,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602175, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}

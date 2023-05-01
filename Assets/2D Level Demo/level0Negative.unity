@@ -7509,6 +7509,7 @@ MonoBehaviour:
   dialogManager: {fileID: 1828137519}
   DoorZerolines:
   - Ah look! The trophy I got for being a great professor! So kind of my students...
+  - I'm very grateful I was able to teach this long
   sprite: {fileID: 2068526436, guid: 84cce7698e7b343f9ba1f80f38d00d9d, type: 3}
   highlightSprite: {fileID: 509650796, guid: 84cce7698e7b343f9ba1f80f38d00d9d, type: 3}
 --- !u!61 &1319443604
@@ -8104,8 +8105,8 @@ MonoBehaviour:
   cursorTexture: {fileID: 0}
   dialogManager: {fileID: 1828137519}
   DoorZerolines:
-  - i look at my old desk in the classroom and notice the tropy i won for being a
-    great professor...
+  - i look at my old desk in the classroom and notice the trophy i won for being
+    a great professor...
   sprite: {fileID: 2068526436, guid: 84cce7698e7b343f9ba1f80f38d00d9d, type: 3}
   highlightSprite: {fileID: 509650796, guid: 84cce7698e7b343f9ba1f80f38d00d9d, type: 3}
 --- !u!1 &1461840738
@@ -8722,7 +8723,7 @@ MonoBehaviour:
   dialogManager: {fileID: 1828137519}
   DoorZerolines:
   - 'Looking out the window, i can see a bright full moon. '
-  - I loved stargazing with Liv
+  - It reminds me how I loved stargazing with Liv, my late wife
   sprite: {fileID: 754320364, guid: 66a890f89957049598a7f6d9b2b46636, type: 3}
   highlightSprite: {fileID: -673513454, guid: 66a890f89957049598a7f6d9b2b46636, type: 3}
 --- !u!114 &1499936861
@@ -8740,7 +8741,7 @@ MonoBehaviour:
   dialogManager: {fileID: 1828137519}
   dialogLines:
   - Wow, a full moon out tonight with a sky filled with stars!
-  - It reminds me of how I used to stargaze with my wife
+  - It reminds me how I loved stargazing with Liv, my late wife
 --- !u!95 &1499936862
 Animator:
   serializedVersion: 4
@@ -13930,11 +13931,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5314002232088876834, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_margin.w
-      value: -10.219681
+      value: -31.058243
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232088876834, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_margin.y
-      value: -64.4949
+      value: -88.80647
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232088876834, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_fontAsset
@@ -13978,11 +13979,18 @@ PrefabInstance:
       objectReference: {fileID: 1310166916}
     - target: {fileID: 5314002232164602171, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: lines.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602171, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: lines.Array.data[0]
-      value: i'm so excited to look around my old classroom!
+      value: 'I''ve spent countless hours studying the stars from this observatory.
+        It''s bittersweet to think that this is my last walk through these halls. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5314002232164602171, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: But I'm grateful for the memories and the discoveries I've made here.
+        Perhaps someday, someone else will continue my work and unlock even more
+        secrets of the universe.
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_Pivot.x
@@ -14014,11 +14022,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -99.428
+      value: -91.32
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -812.145
+      value: -849.654
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_LocalScale.x
@@ -14058,11 +14066,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2.4910278
+      value: -1.5629883
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -381.95197
+      value: -401.40997
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
