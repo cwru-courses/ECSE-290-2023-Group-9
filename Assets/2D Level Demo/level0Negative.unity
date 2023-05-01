@@ -2252,6 +2252,8 @@ MonoBehaviour:
   DoorZerolines:
   - Hmm, I don't want to leave just yet, there is still much to discover and do before
     I rest.
+  - (Remember, at anytime, you can click on the notebook icon in the top left corner
+    to open the notebook)
   sprite: {fileID: -1427857762, guid: 72318449e82f3408f84f4cd8afb6c0c0, type: 3}
   highlightSprite: {fileID: 2054795558, guid: 72318449e82f3408f84f4cd8afb6c0c0, type: 3}
 --- !u!1001 &513323192
@@ -13844,7 +13846,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5314002232088876834, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_margin.w
-      value: -64.24623
+      value: -10.219681
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232088876834, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_margin.y
@@ -13880,7 +13882,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232088876837, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -15
+      value: -33
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602171, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: audioSource
@@ -13928,11 +13930,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -80.511
+      value: -99.428
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -903.315
+      value: -812.145
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_LocalScale.x
@@ -13972,11 +13974,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 11.949951
+      value: 2.4910278
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -334.65796
+      value: -381.95197
       objectReference: {fileID: 0}
     - target: {fileID: 5314002232164602172, guid: ab5e2dcc7579239458ce81e53df0858c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
