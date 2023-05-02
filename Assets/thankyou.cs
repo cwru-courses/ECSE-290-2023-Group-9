@@ -26,9 +26,15 @@ public class thankyou : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            SceneManager.LoadScene(sceneName: "Start");
             Debug.Log("Quit Pressed!");
         }
+        //FOR DEV USE! OR WINDOWS BUILD USE
+        //if (Input.GetKeyDown(KeyCode.U))
+        //{
+        //    Application.Quit();
+        //    Debug.Log("Quit Pressed!");
+        //}
     }
 
     IEnumerator ActivateTextAfterDelay1()

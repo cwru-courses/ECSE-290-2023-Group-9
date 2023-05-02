@@ -51,6 +51,13 @@ public class MainMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            SceneManager.LoadScene(sceneName: "Start");
+            Debug.Log("Quit Pressed!");
+        }
+
+        //FOR DEV USE! OR WINDOWS BUILD USE
+        if (Input.GetKeyDown(KeyCode.U))
+        {
             Application.Quit();
             Debug.Log("Quit Pressed!");
         }
